@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnfermedadesReportadas));
             this.LblEnfermedadesReportadas = new System.Windows.Forms.Label();
             this.GroupBoxEnfermedades = new System.Windows.Forms.GroupBox();
-            this.LblEnfermedades = new System.Windows.Forms.Label();
-            this.CkBoxHipertension = new System.Windows.Forms.CheckBox();
-            this.CkBoxDiabetes = new System.Windows.Forms.CheckBox();
-            this.CkBoxEnfermedadRenal = new System.Windows.Forms.CheckBox();
-            this.CkBoxEnfermedadPulmonar = new System.Windows.Forms.CheckBox();
             this.CkBoxTrastornoNeurocognitivo = new System.Windows.Forms.CheckBox();
+            this.CkBoxEnfermedadPulmonar = new System.Windows.Forms.CheckBox();
+            this.CkBoxEnfermedadRenal = new System.Windows.Forms.CheckBox();
+            this.CkBoxDiabetes = new System.Windows.Forms.CheckBox();
+            this.CkBoxHipertension = new System.Windows.Forms.CheckBox();
+            this.LblEnfermedades = new System.Windows.Forms.Label();
             this.BtnContinuar2 = new System.Windows.Forms.Button();
             this.GroupBoxEnfermedades.SuspendLayout();
             this.SuspendLayout();
@@ -66,48 +66,16 @@
             this.GroupBoxEnfermedades.TabStop = false;
             this.GroupBoxEnfermedades.Text = "PATOLOGÍAS";
             // 
-            // LblEnfermedades
+            // CkBoxTrastornoNeurocognitivo
             // 
-            this.LblEnfermedades.AutoSize = true;
-            this.LblEnfermedades.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEnfermedades.Location = new System.Drawing.Point(41, 54);
-            this.LblEnfermedades.Name = "LblEnfermedades";
-            this.LblEnfermedades.Size = new System.Drawing.Size(280, 16);
-            this.LblEnfermedades.TabIndex = 0;
-            this.LblEnfermedades.Text = "Seleccione la enfermedad que usted padece:";
-            // 
-            // CkBoxHipertension
-            // 
-            this.CkBoxHipertension.AutoSize = true;
-            this.CkBoxHipertension.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkBoxHipertension.Location = new System.Drawing.Point(61, 88);
-            this.CkBoxHipertension.Name = "CkBoxHipertension";
-            this.CkBoxHipertension.Size = new System.Drawing.Size(149, 20);
-            this.CkBoxHipertension.TabIndex = 1;
-            this.CkBoxHipertension.Text = "Hipertensión arterial.";
-            this.CkBoxHipertension.UseVisualStyleBackColor = true;
-            // 
-            // CkBoxDiabetes
-            // 
-            this.CkBoxDiabetes.AutoSize = true;
-            this.CkBoxDiabetes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkBoxDiabetes.Location = new System.Drawing.Point(61, 122);
-            this.CkBoxDiabetes.Name = "CkBoxDiabetes";
-            this.CkBoxDiabetes.Size = new System.Drawing.Size(132, 20);
-            this.CkBoxDiabetes.TabIndex = 2;
-            this.CkBoxDiabetes.Text = "Diabetes Mielitus.";
-            this.CkBoxDiabetes.UseVisualStyleBackColor = true;
-            // 
-            // CkBoxEnfermedadRenal
-            // 
-            this.CkBoxEnfermedadRenal.AutoSize = true;
-            this.CkBoxEnfermedadRenal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkBoxEnfermedadRenal.Location = new System.Drawing.Point(61, 157);
-            this.CkBoxEnfermedadRenal.Name = "CkBoxEnfermedadRenal";
-            this.CkBoxEnfermedadRenal.Size = new System.Drawing.Size(208, 20);
-            this.CkBoxEnfermedadRenal.TabIndex = 3;
-            this.CkBoxEnfermedadRenal.Text = "Enfermedad renal crónica I y II.";
-            this.CkBoxEnfermedadRenal.UseVisualStyleBackColor = true;
+            this.CkBoxTrastornoNeurocognitivo.AutoSize = true;
+            this.CkBoxTrastornoNeurocognitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CkBoxTrastornoNeurocognitivo.Location = new System.Drawing.Point(320, 135);
+            this.CkBoxTrastornoNeurocognitivo.Name = "CkBoxTrastornoNeurocognitivo";
+            this.CkBoxTrastornoNeurocognitivo.Size = new System.Drawing.Size(181, 20);
+            this.CkBoxTrastornoNeurocognitivo.TabIndex = 5;
+            this.CkBoxTrastornoNeurocognitivo.Text = "Trastorno Neurocognitivo.";
+            this.CkBoxTrastornoNeurocognitivo.UseVisualStyleBackColor = true;
             // 
             // CkBoxEnfermedadPulmonar
             // 
@@ -120,16 +88,48 @@
             this.CkBoxEnfermedadPulmonar.Text = "Enfermedad Pulmonar.";
             this.CkBoxEnfermedadPulmonar.UseVisualStyleBackColor = true;
             // 
-            // CkBoxTrastornoNeurocognitivo
+            // CkBoxEnfermedadRenal
             // 
-            this.CkBoxTrastornoNeurocognitivo.AutoSize = true;
-            this.CkBoxTrastornoNeurocognitivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkBoxTrastornoNeurocognitivo.Location = new System.Drawing.Point(320, 135);
-            this.CkBoxTrastornoNeurocognitivo.Name = "CkBoxTrastornoNeurocognitivo";
-            this.CkBoxTrastornoNeurocognitivo.Size = new System.Drawing.Size(181, 20);
-            this.CkBoxTrastornoNeurocognitivo.TabIndex = 5;
-            this.CkBoxTrastornoNeurocognitivo.Text = "Trastorno Neurocognitivo.";
-            this.CkBoxTrastornoNeurocognitivo.UseVisualStyleBackColor = true;
+            this.CkBoxEnfermedadRenal.AutoSize = true;
+            this.CkBoxEnfermedadRenal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CkBoxEnfermedadRenal.Location = new System.Drawing.Point(61, 157);
+            this.CkBoxEnfermedadRenal.Name = "CkBoxEnfermedadRenal";
+            this.CkBoxEnfermedadRenal.Size = new System.Drawing.Size(208, 20);
+            this.CkBoxEnfermedadRenal.TabIndex = 3;
+            this.CkBoxEnfermedadRenal.Text = "Enfermedad renal crónica I y II.";
+            this.CkBoxEnfermedadRenal.UseVisualStyleBackColor = true;
+            // 
+            // CkBoxDiabetes
+            // 
+            this.CkBoxDiabetes.AutoSize = true;
+            this.CkBoxDiabetes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CkBoxDiabetes.Location = new System.Drawing.Point(61, 122);
+            this.CkBoxDiabetes.Name = "CkBoxDiabetes";
+            this.CkBoxDiabetes.Size = new System.Drawing.Size(132, 20);
+            this.CkBoxDiabetes.TabIndex = 2;
+            this.CkBoxDiabetes.Text = "Diabetes Mielitus.";
+            this.CkBoxDiabetes.UseVisualStyleBackColor = true;
+            // 
+            // CkBoxHipertension
+            // 
+            this.CkBoxHipertension.AutoSize = true;
+            this.CkBoxHipertension.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CkBoxHipertension.Location = new System.Drawing.Point(61, 88);
+            this.CkBoxHipertension.Name = "CkBoxHipertension";
+            this.CkBoxHipertension.Size = new System.Drawing.Size(149, 20);
+            this.CkBoxHipertension.TabIndex = 1;
+            this.CkBoxHipertension.Text = "Hipertensión arterial.";
+            this.CkBoxHipertension.UseVisualStyleBackColor = true;
+            // 
+            // LblEnfermedades
+            // 
+            this.LblEnfermedades.AutoSize = true;
+            this.LblEnfermedades.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEnfermedades.Location = new System.Drawing.Point(41, 54);
+            this.LblEnfermedades.Name = "LblEnfermedades";
+            this.LblEnfermedades.Size = new System.Drawing.Size(280, 16);
+            this.LblEnfermedades.TabIndex = 0;
+            this.LblEnfermedades.Text = "Seleccione la enfermedad que usted padece:";
             // 
             // BtnContinuar2
             // 
@@ -148,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(665, 430);
+            this.ClientSize = new System.Drawing.Size(902, 560);
             this.Controls.Add(this.BtnContinuar2);
             this.Controls.Add(this.GroupBoxEnfermedades);
             this.Controls.Add(this.LblEnfermedadesReportadas);

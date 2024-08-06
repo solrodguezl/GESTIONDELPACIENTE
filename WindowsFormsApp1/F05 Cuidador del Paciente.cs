@@ -16,5 +16,18 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CuidadorPaciente_Load(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
+
+

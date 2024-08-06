@@ -31,38 +31,38 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosGeneralesPaciente));
             this.label1 = new System.Windows.Forms.Label();
             this.GroupBoxInformacionPersonal = new System.Windows.Forms.GroupBox();
-            this.lblPrimerNombre = new System.Windows.Forms.Label();
-            this.lblPrimerApellido = new System.Windows.Forms.Label();
-            this.lblSegundoNombre = new System.Windows.Forms.Label();
-            this.lblSegundoApellido = new System.Windows.Forms.Label();
-            this.lblGenero = new System.Windows.Forms.Label();
-            this.lblFechaNacimiento = new System.Windows.Forms.Label();
-            this.lblDocumento = new System.Windows.Forms.Label();
-            this.lblDepartamento = new System.Windows.Forms.Label();
-            this.TxtPrimerNombre = new System.Windows.Forms.TextBox();
-            this.TxtSegundoNombre = new System.Windows.Forms.TextBox();
-            this.TxtPrimerApellido = new System.Windows.Forms.TextBox();
-            this.TxtSegundoApellido = new System.Windows.Forms.TextBox();
-            this.ComBoxGenero = new System.Windows.Forms.ComboBox();
-            this.ComBoxDepartamento = new System.Windows.Forms.ComboBox();
-            this.PickFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-            this.GroupBoxDatosEconomicos = new System.Windows.Forms.GroupBox();
-            this.LblProveedor = new System.Windows.Forms.Label();
-            this.RbtnCedula = new System.Windows.Forms.RadioButton();
-            this.RbtnTarjetaIdentidad = new System.Windows.Forms.RadioButton();
             this.RbtnPasaporte = new System.Windows.Forms.RadioButton();
-            this.RbtnNO = new System.Windows.Forms.RadioButton();
-            this.RbtnSI = new System.Windows.Forms.RadioButton();
-            this.LblSituacionLaboral = new System.Windows.Forms.Label();
-            this.LblRecursosEconomicos = new System.Windows.Forms.Label();
-            this.LblTipoVivienda = new System.Windows.Forms.Label();
-            this.LblDirecciónResidencia = new System.Windows.Forms.Label();
-            this.LblReduccionAutonomia = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.RbtnTarjetaIdentidad = new System.Windows.Forms.RadioButton();
+            this.RbtnCedula = new System.Windows.Forms.RadioButton();
+            this.PickFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.ComBoxDepartamento = new System.Windows.Forms.ComboBox();
+            this.ComBoxGenero = new System.Windows.Forms.ComboBox();
+            this.TxtSegundoApellido = new System.Windows.Forms.TextBox();
+            this.TxtPrimerApellido = new System.Windows.Forms.TextBox();
+            this.TxtSegundoNombre = new System.Windows.Forms.TextBox();
+            this.TxtPrimerNombre = new System.Windows.Forms.TextBox();
+            this.lblDepartamento = new System.Windows.Forms.Label();
+            this.lblDocumento = new System.Windows.Forms.Label();
+            this.lblFechaNacimiento = new System.Windows.Forms.Label();
+            this.lblGenero = new System.Windows.Forms.Label();
+            this.lblSegundoApellido = new System.Windows.Forms.Label();
+            this.lblSegundoNombre = new System.Windows.Forms.Label();
+            this.lblPrimerApellido = new System.Windows.Forms.Label();
+            this.lblPrimerNombre = new System.Windows.Forms.Label();
+            this.GroupBoxDatosEconomicos = new System.Windows.Forms.GroupBox();
             this.TxtDireccion = new System.Windows.Forms.TextBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.LblReduccionAutonomia = new System.Windows.Forms.Label();
+            this.LblDirecciónResidencia = new System.Windows.Forms.Label();
+            this.LblTipoVivienda = new System.Windows.Forms.Label();
+            this.LblRecursosEconomicos = new System.Windows.Forms.Label();
+            this.LblSituacionLaboral = new System.Windows.Forms.Label();
+            this.RbtnSI = new System.Windows.Forms.RadioButton();
+            this.RbtnNO = new System.Windows.Forms.RadioButton();
+            this.LblProveedor = new System.Windows.Forms.Label();
             this.BtnContinuar1 = new System.Windows.Forms.Button();
             this.GroupBoxInformacionPersonal.SuspendLayout();
             this.GroupBoxDatosEconomicos.SuspendLayout();
@@ -112,118 +112,45 @@
             this.GroupBoxInformacionPersonal.TabStop = false;
             this.GroupBoxInformacionPersonal.Text = "INFORMACIÓN PERSONAL";
             // 
-            // lblPrimerNombre
+            // RbtnPasaporte
             // 
-            this.lblPrimerNombre.AutoSize = true;
-            this.lblPrimerNombre.Location = new System.Drawing.Point(10, 40);
-            this.lblPrimerNombre.Name = "lblPrimerNombre";
-            this.lblPrimerNombre.Size = new System.Drawing.Size(77, 13);
-            this.lblPrimerNombre.TabIndex = 0;
-            this.lblPrimerNombre.Text = "Primer nombre:";
-            this.lblPrimerNombre.Click += new System.EventHandler(this.label2_Click);
+            this.RbtnPasaporte.AutoSize = true;
+            this.RbtnPasaporte.Location = new System.Drawing.Point(581, 171);
+            this.RbtnPasaporte.Name = "RbtnPasaporte";
+            this.RbtnPasaporte.Size = new System.Drawing.Size(76, 17);
+            this.RbtnPasaporte.TabIndex = 21;
+            this.RbtnPasaporte.TabStop = true;
+            this.RbtnPasaporte.Text = "Pasaporte.";
+            this.RbtnPasaporte.UseVisualStyleBackColor = true;
             // 
-            // lblPrimerApellido
+            // RbtnTarjetaIdentidad
             // 
-            this.lblPrimerApellido.AutoSize = true;
-            this.lblPrimerApellido.Location = new System.Drawing.Point(10, 86);
-            this.lblPrimerApellido.Name = "lblPrimerApellido";
-            this.lblPrimerApellido.Size = new System.Drawing.Size(78, 13);
-            this.lblPrimerApellido.TabIndex = 1;
-            this.lblPrimerApellido.Text = "Primer apellido:";
+            this.RbtnTarjetaIdentidad.AutoSize = true;
+            this.RbtnTarjetaIdentidad.Location = new System.Drawing.Point(581, 143);
+            this.RbtnTarjetaIdentidad.Name = "RbtnTarjetaIdentidad";
+            this.RbtnTarjetaIdentidad.Size = new System.Drawing.Size(122, 17);
+            this.RbtnTarjetaIdentidad.TabIndex = 20;
+            this.RbtnTarjetaIdentidad.TabStop = true;
+            this.RbtnTarjetaIdentidad.Text = "Tarjeta de identidad.";
+            this.RbtnTarjetaIdentidad.UseVisualStyleBackColor = true;
             // 
-            // lblSegundoNombre
+            // RbtnCedula
             // 
-            this.lblSegundoNombre.AutoSize = true;
-            this.lblSegundoNombre.Location = new System.Drawing.Point(281, 40);
-            this.lblSegundoNombre.Name = "lblSegundoNombre";
-            this.lblSegundoNombre.Size = new System.Drawing.Size(91, 13);
-            this.lblSegundoNombre.TabIndex = 2;
-            this.lblSegundoNombre.Text = "Segundo nombre:";
+            this.RbtnCedula.AutoSize = true;
+            this.RbtnCedula.Location = new System.Drawing.Point(581, 120);
+            this.RbtnCedula.Name = "RbtnCedula";
+            this.RbtnCedula.Size = new System.Drawing.Size(61, 17);
+            this.RbtnCedula.TabIndex = 19;
+            this.RbtnCedula.TabStop = true;
+            this.RbtnCedula.Text = "Cédula.";
+            this.RbtnCedula.UseVisualStyleBackColor = true;
             // 
-            // lblSegundoApellido
+            // PickFechaNacimiento
             // 
-            this.lblSegundoApellido.AutoSize = true;
-            this.lblSegundoApellido.Location = new System.Drawing.Point(281, 86);
-            this.lblSegundoApellido.Name = "lblSegundoApellido";
-            this.lblSegundoApellido.Size = new System.Drawing.Size(92, 13);
-            this.lblSegundoApellido.TabIndex = 3;
-            this.lblSegundoApellido.Text = "Segundo apellido:";
-            // 
-            // lblGenero
-            // 
-            this.lblGenero.AutoSize = true;
-            this.lblGenero.Location = new System.Drawing.Point(552, 40);
-            this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(45, 13);
-            this.lblGenero.TabIndex = 4;
-            this.lblGenero.Text = "Género:";
-            // 
-            // lblFechaNacimiento
-            // 
-            this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(10, 126);
-            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(111, 13);
-            this.lblFechaNacimiento.TabIndex = 5;
-            this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
-            // 
-            // lblDocumento
-            // 
-            this.lblDocumento.AutoSize = true;
-            this.lblDocumento.Location = new System.Drawing.Point(552, 88);
-            this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Size = new System.Drawing.Size(104, 13);
-            this.lblDocumento.TabIndex = 6;
-            this.lblDocumento.Text = "Tipo de Documento:";
-            // 
-            // lblDepartamento
-            // 
-            this.lblDepartamento.AutoSize = true;
-            this.lblDepartamento.Location = new System.Drawing.Point(10, 173);
-            this.lblDepartamento.Name = "lblDepartamento";
-            this.lblDepartamento.Size = new System.Drawing.Size(77, 13);
-            this.lblDepartamento.TabIndex = 7;
-            this.lblDepartamento.Text = "Departamento:";
-            // 
-            // TxtPrimerNombre
-            // 
-            this.TxtPrimerNombre.Location = new System.Drawing.Point(92, 37);
-            this.TxtPrimerNombre.Name = "TxtPrimerNombre";
-            this.TxtPrimerNombre.Size = new System.Drawing.Size(174, 20);
-            this.TxtPrimerNombre.TabIndex = 8;
-            // 
-            // TxtSegundoNombre
-            // 
-            this.TxtSegundoNombre.Location = new System.Drawing.Point(375, 36);
-            this.TxtSegundoNombre.Name = "TxtSegundoNombre";
-            this.TxtSegundoNombre.Size = new System.Drawing.Size(161, 20);
-            this.TxtSegundoNombre.TabIndex = 9;
-            // 
-            // TxtPrimerApellido
-            // 
-            this.TxtPrimerApellido.Location = new System.Drawing.Point(92, 80);
-            this.TxtPrimerApellido.Name = "TxtPrimerApellido";
-            this.TxtPrimerApellido.Size = new System.Drawing.Size(174, 20);
-            this.TxtPrimerApellido.TabIndex = 10;
-            // 
-            // TxtSegundoApellido
-            // 
-            this.TxtSegundoApellido.Location = new System.Drawing.Point(375, 81);
-            this.TxtSegundoApellido.Name = "TxtSegundoApellido";
-            this.TxtSegundoApellido.Size = new System.Drawing.Size(161, 20);
-            this.TxtSegundoApellido.TabIndex = 11;
-            // 
-            // ComBoxGenero
-            // 
-            this.ComBoxGenero.FormattingEnabled = true;
-            this.ComBoxGenero.Items.AddRange(new object[] {
-            "Mujer",
-            "Hombre",
-            "Otro"});
-            this.ComBoxGenero.Location = new System.Drawing.Point(594, 36);
-            this.ComBoxGenero.Name = "ComBoxGenero";
-            this.ComBoxGenero.Size = new System.Drawing.Size(132, 21);
-            this.ComBoxGenero.TabIndex = 16;
+            this.PickFechaNacimiento.Location = new System.Drawing.Point(136, 120);
+            this.PickFechaNacimiento.Name = "PickFechaNacimiento";
+            this.PickFechaNacimiento.Size = new System.Drawing.Size(224, 20);
+            this.PickFechaNacimiento.TabIndex = 18;
             // 
             // ComBoxDepartamento
             // 
@@ -252,12 +179,118 @@
             this.ComBoxDepartamento.Size = new System.Drawing.Size(201, 21);
             this.ComBoxDepartamento.TabIndex = 17;
             // 
-            // PickFechaNacimiento
+            // ComBoxGenero
             // 
-            this.PickFechaNacimiento.Location = new System.Drawing.Point(136, 120);
-            this.PickFechaNacimiento.Name = "PickFechaNacimiento";
-            this.PickFechaNacimiento.Size = new System.Drawing.Size(224, 20);
-            this.PickFechaNacimiento.TabIndex = 18;
+            this.ComBoxGenero.FormattingEnabled = true;
+            this.ComBoxGenero.Items.AddRange(new object[] {
+            "Mujer",
+            "Hombre",
+            "Otro"});
+            this.ComBoxGenero.Location = new System.Drawing.Point(594, 36);
+            this.ComBoxGenero.Name = "ComBoxGenero";
+            this.ComBoxGenero.Size = new System.Drawing.Size(132, 21);
+            this.ComBoxGenero.TabIndex = 16;
+            // 
+            // TxtSegundoApellido
+            // 
+            this.TxtSegundoApellido.Location = new System.Drawing.Point(375, 81);
+            this.TxtSegundoApellido.Name = "TxtSegundoApellido";
+            this.TxtSegundoApellido.Size = new System.Drawing.Size(161, 20);
+            this.TxtSegundoApellido.TabIndex = 11;
+            // 
+            // TxtPrimerApellido
+            // 
+            this.TxtPrimerApellido.Location = new System.Drawing.Point(92, 80);
+            this.TxtPrimerApellido.Name = "TxtPrimerApellido";
+            this.TxtPrimerApellido.Size = new System.Drawing.Size(174, 20);
+            this.TxtPrimerApellido.TabIndex = 10;
+            // 
+            // TxtSegundoNombre
+            // 
+            this.TxtSegundoNombre.Location = new System.Drawing.Point(375, 36);
+            this.TxtSegundoNombre.Name = "TxtSegundoNombre";
+            this.TxtSegundoNombre.Size = new System.Drawing.Size(161, 20);
+            this.TxtSegundoNombre.TabIndex = 9;
+            // 
+            // TxtPrimerNombre
+            // 
+            this.TxtPrimerNombre.Location = new System.Drawing.Point(92, 37);
+            this.TxtPrimerNombre.Name = "TxtPrimerNombre";
+            this.TxtPrimerNombre.Size = new System.Drawing.Size(174, 20);
+            this.TxtPrimerNombre.TabIndex = 8;
+            // 
+            // lblDepartamento
+            // 
+            this.lblDepartamento.AutoSize = true;
+            this.lblDepartamento.Location = new System.Drawing.Point(10, 173);
+            this.lblDepartamento.Name = "lblDepartamento";
+            this.lblDepartamento.Size = new System.Drawing.Size(77, 13);
+            this.lblDepartamento.TabIndex = 7;
+            this.lblDepartamento.Text = "Departamento:";
+            // 
+            // lblDocumento
+            // 
+            this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Location = new System.Drawing.Point(552, 88);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(104, 13);
+            this.lblDocumento.TabIndex = 6;
+            this.lblDocumento.Text = "Tipo de Documento:";
+            // 
+            // lblFechaNacimiento
+            // 
+            this.lblFechaNacimiento.AutoSize = true;
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(10, 126);
+            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(111, 13);
+            this.lblFechaNacimiento.TabIndex = 5;
+            this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
+            // 
+            // lblGenero
+            // 
+            this.lblGenero.AutoSize = true;
+            this.lblGenero.Location = new System.Drawing.Point(552, 40);
+            this.lblGenero.Name = "lblGenero";
+            this.lblGenero.Size = new System.Drawing.Size(45, 13);
+            this.lblGenero.TabIndex = 4;
+            this.lblGenero.Text = "Género:";
+            // 
+            // lblSegundoApellido
+            // 
+            this.lblSegundoApellido.AutoSize = true;
+            this.lblSegundoApellido.Location = new System.Drawing.Point(281, 86);
+            this.lblSegundoApellido.Name = "lblSegundoApellido";
+            this.lblSegundoApellido.Size = new System.Drawing.Size(92, 13);
+            this.lblSegundoApellido.TabIndex = 3;
+            this.lblSegundoApellido.Text = "Segundo apellido:";
+            // 
+            // lblSegundoNombre
+            // 
+            this.lblSegundoNombre.AutoSize = true;
+            this.lblSegundoNombre.Location = new System.Drawing.Point(281, 40);
+            this.lblSegundoNombre.Name = "lblSegundoNombre";
+            this.lblSegundoNombre.Size = new System.Drawing.Size(91, 13);
+            this.lblSegundoNombre.TabIndex = 2;
+            this.lblSegundoNombre.Text = "Segundo nombre:";
+            // 
+            // lblPrimerApellido
+            // 
+            this.lblPrimerApellido.AutoSize = true;
+            this.lblPrimerApellido.Location = new System.Drawing.Point(10, 86);
+            this.lblPrimerApellido.Name = "lblPrimerApellido";
+            this.lblPrimerApellido.Size = new System.Drawing.Size(78, 13);
+            this.lblPrimerApellido.TabIndex = 1;
+            this.lblPrimerApellido.Text = "Primer apellido:";
+            // 
+            // lblPrimerNombre
+            // 
+            this.lblPrimerNombre.AutoSize = true;
+            this.lblPrimerNombre.Location = new System.Drawing.Point(10, 40);
+            this.lblPrimerNombre.Name = "lblPrimerNombre";
+            this.lblPrimerNombre.Size = new System.Drawing.Size(77, 13);
+            this.lblPrimerNombre.TabIndex = 0;
+            this.lblPrimerNombre.Text = "Primer nombre:";
+            this.lblPrimerNombre.Click += new System.EventHandler(this.label2_Click);
             // 
             // GroupBoxDatosEconomicos
             // 
@@ -281,116 +314,56 @@
             this.GroupBoxDatosEconomicos.TabStop = false;
             this.GroupBoxDatosEconomicos.Text = "DATOS ECONÓMICOS";
             // 
-            // LblProveedor
+            // TxtDireccion
             // 
-            this.LblProveedor.AutoSize = true;
-            this.LblProveedor.Location = new System.Drawing.Point(33, 37);
-            this.LblProveedor.Name = "LblProveedor";
-            this.LblProveedor.Size = new System.Drawing.Size(257, 13);
-            this.LblProveedor.TabIndex = 0;
-            this.LblProveedor.Text = "¿El paciente es/era el proveedor principal del hogar?";
-            this.LblProveedor.Click += new System.EventHandler(this.LblProveedor_Click);
+            this.TxtDireccion.Location = new System.Drawing.Point(508, 114);
+            this.TxtDireccion.Name = "TxtDireccion";
+            this.TxtDireccion.Size = new System.Drawing.Size(183, 20);
+            this.TxtDireccion.TabIndex = 12;
+            this.TxtDireccion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // RbtnCedula
+            // comboBox4
             // 
-            this.RbtnCedula.AutoSize = true;
-            this.RbtnCedula.Location = new System.Drawing.Point(581, 120);
-            this.RbtnCedula.Name = "RbtnCedula";
-            this.RbtnCedula.Size = new System.Drawing.Size(61, 17);
-            this.RbtnCedula.TabIndex = 19;
-            this.RbtnCedula.TabStop = true;
-            this.RbtnCedula.Text = "Cédula.";
-            this.RbtnCedula.UseVisualStyleBackColor = true;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Propia",
+            "Familiar",
+            "Arrendada",
+            "Institucionalizado/a",
+            "Otro"});
+            this.comboBox4.Location = new System.Drawing.Point(508, 77);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(183, 21);
+            this.comboBox4.TabIndex = 11;
             // 
-            // RbtnTarjetaIdentidad
+            // comboBox3
             // 
-            this.RbtnTarjetaIdentidad.AutoSize = true;
-            this.RbtnTarjetaIdentidad.Location = new System.Drawing.Point(581, 143);
-            this.RbtnTarjetaIdentidad.Name = "RbtnTarjetaIdentidad";
-            this.RbtnTarjetaIdentidad.Size = new System.Drawing.Size(122, 17);
-            this.RbtnTarjetaIdentidad.TabIndex = 20;
-            this.RbtnTarjetaIdentidad.TabStop = true;
-            this.RbtnTarjetaIdentidad.Text = "Tarjeta de identidad.";
-            this.RbtnTarjetaIdentidad.UseVisualStyleBackColor = true;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Ninguna",
+            "Leve",
+            "Grave",
+            "Total"});
+            this.comboBox3.Location = new System.Drawing.Point(140, 180);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(220, 21);
+            this.comboBox3.TabIndex = 10;
             // 
-            // RbtnPasaporte
+            // comboBox2
             // 
-            this.RbtnPasaporte.AutoSize = true;
-            this.RbtnPasaporte.Location = new System.Drawing.Point(581, 171);
-            this.RbtnPasaporte.Name = "RbtnPasaporte";
-            this.RbtnPasaporte.Size = new System.Drawing.Size(76, 17);
-            this.RbtnPasaporte.TabIndex = 21;
-            this.RbtnPasaporte.TabStop = true;
-            this.RbtnPasaporte.Text = "Pasaporte.";
-            this.RbtnPasaporte.UseVisualStyleBackColor = true;
-            // 
-            // RbtnNO
-            // 
-            this.RbtnNO.AutoSize = true;
-            this.RbtnNO.Location = new System.Drawing.Point(361, 37);
-            this.RbtnNO.Name = "RbtnNO";
-            this.RbtnNO.Size = new System.Drawing.Size(42, 17);
-            this.RbtnNO.TabIndex = 1;
-            this.RbtnNO.TabStop = true;
-            this.RbtnNO.Text = "No.";
-            this.RbtnNO.UseVisualStyleBackColor = true;
-            // 
-            // RbtnSI
-            // 
-            this.RbtnSI.AutoSize = true;
-            this.RbtnSI.Location = new System.Drawing.Point(316, 37);
-            this.RbtnSI.Name = "RbtnSI";
-            this.RbtnSI.Size = new System.Drawing.Size(39, 17);
-            this.RbtnSI.TabIndex = 2;
-            this.RbtnSI.TabStop = true;
-            this.RbtnSI.Text = "Sí.";
-            this.RbtnSI.UseVisualStyleBackColor = true;
-            // 
-            // LblSituacionLaboral
-            // 
-            this.LblSituacionLaboral.AutoSize = true;
-            this.LblSituacionLaboral.Location = new System.Drawing.Point(36, 80);
-            this.LblSituacionLaboral.Name = "LblSituacionLaboral";
-            this.LblSituacionLaboral.Size = new System.Drawing.Size(88, 13);
-            this.LblSituacionLaboral.TabIndex = 3;
-            this.LblSituacionLaboral.Text = "Situación laboral:";
-            this.LblSituacionLaboral.Click += new System.EventHandler(this.LblSituacionLaboral_Click);
-            // 
-            // LblRecursosEconomicos
-            // 
-            this.LblRecursosEconomicos.AutoSize = true;
-            this.LblRecursosEconomicos.Location = new System.Drawing.Point(22, 114);
-            this.LblRecursosEconomicos.Name = "LblRecursosEconomicos";
-            this.LblRecursosEconomicos.Size = new System.Drawing.Size(115, 13);
-            this.LblRecursosEconomicos.TabIndex = 4;
-            this.LblRecursosEconomicos.Text = "Recursos económicos:";
-            // 
-            // LblTipoVivienda
-            // 
-            this.LblTipoVivienda.AutoSize = true;
-            this.LblTipoVivienda.Location = new System.Drawing.Point(410, 80);
-            this.LblTipoVivienda.Name = "LblTipoVivienda";
-            this.LblTipoVivienda.Size = new System.Drawing.Size(92, 13);
-            this.LblTipoVivienda.TabIndex = 5;
-            this.LblTipoVivienda.Text = "Tipo de vivienda: ";
-            // 
-            // LblDirecciónResidencia
-            // 
-            this.LblDirecciónResidencia.AutoSize = true;
-            this.LblDirecciónResidencia.Location = new System.Drawing.Point(378, 114);
-            this.LblDirecciónResidencia.Name = "LblDirecciónResidencia";
-            this.LblDirecciónResidencia.Size = new System.Drawing.Size(124, 13);
-            this.LblDirecciónResidencia.TabIndex = 6;
-            this.LblDirecciónResidencia.Text = "Dirección de residencia: ";
-            // 
-            // LblReduccionAutonomia
-            // 
-            this.LblReduccionAutonomia.AutoSize = true;
-            this.LblReduccionAutonomia.Location = new System.Drawing.Point(22, 154);
-            this.LblReduccionAutonomia.Name = "LblReduccionAutonomia";
-            this.LblReduccionAutonomia.Size = new System.Drawing.Size(324, 13);
-            this.LblReduccionAutonomia.TabIndex = 7;
-            this.LblReduccionAutonomia.Text = "Nivel de reducción en la autonomía física y psíquica del paciente: ";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Inferior a un SMMLV",
+            "1 SMMLV",
+            "Superior a 1 SMMLV",
+            "Subsidios",
+            "Aportes familiares",
+            "Sin ingresos económicos",
+            "Otro"});
+            this.comboBox2.Location = new System.Drawing.Point(140, 111);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(220, 21);
+            this.comboBox2.TabIndex = 9;
             // 
             // comboBox1
             // 
@@ -410,56 +383,83 @@
             this.comboBox1.Size = new System.Drawing.Size(220, 21);
             this.comboBox1.TabIndex = 8;
             // 
-            // comboBox2
+            // LblReduccionAutonomia
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Inferior a un SMMLV",
-            "1 SMMLV",
-            "Superior a 1 SMMLV",
-            "Subsidios",
-            "Aportes familiares",
-            "Sin ingresos económicos",
-            "Otro"});
-            this.comboBox2.Location = new System.Drawing.Point(140, 111);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 21);
-            this.comboBox2.TabIndex = 9;
+            this.LblReduccionAutonomia.AutoSize = true;
+            this.LblReduccionAutonomia.Location = new System.Drawing.Point(22, 154);
+            this.LblReduccionAutonomia.Name = "LblReduccionAutonomia";
+            this.LblReduccionAutonomia.Size = new System.Drawing.Size(324, 13);
+            this.LblReduccionAutonomia.TabIndex = 7;
+            this.LblReduccionAutonomia.Text = "Nivel de reducción en la autonomía física y psíquica del paciente: ";
             // 
-            // comboBox3
+            // LblDirecciónResidencia
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Ninguna",
-            "Leve",
-            "Grave",
-            "Total"});
-            this.comboBox3.Location = new System.Drawing.Point(140, 180);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(220, 21);
-            this.comboBox3.TabIndex = 10;
+            this.LblDirecciónResidencia.AutoSize = true;
+            this.LblDirecciónResidencia.Location = new System.Drawing.Point(378, 114);
+            this.LblDirecciónResidencia.Name = "LblDirecciónResidencia";
+            this.LblDirecciónResidencia.Size = new System.Drawing.Size(124, 13);
+            this.LblDirecciónResidencia.TabIndex = 6;
+            this.LblDirecciónResidencia.Text = "Dirección de residencia: ";
             // 
-            // comboBox4
+            // LblTipoVivienda
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Propia",
-            "Familiar",
-            "Arrendada",
-            "Institucionalizado/a",
-            "Otro"});
-            this.comboBox4.Location = new System.Drawing.Point(508, 77);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(183, 21);
-            this.comboBox4.TabIndex = 11;
+            this.LblTipoVivienda.AutoSize = true;
+            this.LblTipoVivienda.Location = new System.Drawing.Point(410, 80);
+            this.LblTipoVivienda.Name = "LblTipoVivienda";
+            this.LblTipoVivienda.Size = new System.Drawing.Size(92, 13);
+            this.LblTipoVivienda.TabIndex = 5;
+            this.LblTipoVivienda.Text = "Tipo de vivienda: ";
             // 
-            // TxtDireccion
+            // LblRecursosEconomicos
             // 
-            this.TxtDireccion.Location = new System.Drawing.Point(508, 114);
-            this.TxtDireccion.Name = "TxtDireccion";
-            this.TxtDireccion.Size = new System.Drawing.Size(183, 20);
-            this.TxtDireccion.TabIndex = 12;
-            this.TxtDireccion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.LblRecursosEconomicos.AutoSize = true;
+            this.LblRecursosEconomicos.Location = new System.Drawing.Point(22, 114);
+            this.LblRecursosEconomicos.Name = "LblRecursosEconomicos";
+            this.LblRecursosEconomicos.Size = new System.Drawing.Size(115, 13);
+            this.LblRecursosEconomicos.TabIndex = 4;
+            this.LblRecursosEconomicos.Text = "Recursos económicos:";
+            // 
+            // LblSituacionLaboral
+            // 
+            this.LblSituacionLaboral.AutoSize = true;
+            this.LblSituacionLaboral.Location = new System.Drawing.Point(36, 80);
+            this.LblSituacionLaboral.Name = "LblSituacionLaboral";
+            this.LblSituacionLaboral.Size = new System.Drawing.Size(88, 13);
+            this.LblSituacionLaboral.TabIndex = 3;
+            this.LblSituacionLaboral.Text = "Situación laboral:";
+            this.LblSituacionLaboral.Click += new System.EventHandler(this.LblSituacionLaboral_Click);
+            // 
+            // RbtnSI
+            // 
+            this.RbtnSI.AutoSize = true;
+            this.RbtnSI.Location = new System.Drawing.Point(316, 37);
+            this.RbtnSI.Name = "RbtnSI";
+            this.RbtnSI.Size = new System.Drawing.Size(39, 17);
+            this.RbtnSI.TabIndex = 2;
+            this.RbtnSI.TabStop = true;
+            this.RbtnSI.Text = "Sí.";
+            this.RbtnSI.UseVisualStyleBackColor = true;
+            // 
+            // RbtnNO
+            // 
+            this.RbtnNO.AutoSize = true;
+            this.RbtnNO.Location = new System.Drawing.Point(361, 37);
+            this.RbtnNO.Name = "RbtnNO";
+            this.RbtnNO.Size = new System.Drawing.Size(42, 17);
+            this.RbtnNO.TabIndex = 1;
+            this.RbtnNO.TabStop = true;
+            this.RbtnNO.Text = "No.";
+            this.RbtnNO.UseVisualStyleBackColor = true;
+            // 
+            // LblProveedor
+            // 
+            this.LblProveedor.AutoSize = true;
+            this.LblProveedor.Location = new System.Drawing.Point(33, 37);
+            this.LblProveedor.Name = "LblProveedor";
+            this.LblProveedor.Size = new System.Drawing.Size(257, 13);
+            this.LblProveedor.TabIndex = 0;
+            this.LblProveedor.Text = "¿El paciente es/era el proveedor principal del hogar?";
+            this.LblProveedor.Click += new System.EventHandler(this.LblProveedor_Click);
             // 
             // BtnContinuar1
             // 
@@ -477,7 +477,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(769, 589);
+            this.ClientSize = new System.Drawing.Size(916, 589);
             this.Controls.Add(this.BtnContinuar1);
             this.Controls.Add(this.GroupBoxDatosEconomicos);
             this.Controls.Add(this.GroupBoxInformacionPersonal);

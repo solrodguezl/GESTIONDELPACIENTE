@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvaluacionFamiliar));
             this.LblEvaluacionFamiliar = new System.Windows.Forms.Label();
             this.GroupBoxFamiliar = new System.Windows.Forms.GroupBox();
-            this.LblNombresFamiliar = new System.Windows.Forms.Label();
-            this.LblApellidosFamiliar = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.LblParentesco = new System.Windows.Forms.Label();
+            this.LblApellidosFamiliar = new System.Windows.Forms.Label();
+            this.LblNombresFamiliar = new System.Windows.Forms.Label();
             this.LblEdadFamiliar = new System.Windows.Forms.Label();
             this.LblEtapaFamiliar = new System.Windows.Forms.Label();
             this.LblNiveldeEscolaridadFam = new System.Windows.Forms.Label();
             this.LblOcupacionFamiliar = new System.Windows.Forms.Label();
             this.LblRedCuidado = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.CkBoxNoCuidado = new System.Windows.Forms.CheckBox();
@@ -51,11 +51,11 @@
             this.GroupBoxEDAD = new System.Windows.Forms.GroupBox();
             this.GroupBoxEscolaridadFam = new System.Windows.Forms.GroupBox();
             this.GroupBoxRedCuidado = new System.Windows.Forms.GroupBox();
-            this.BtnContinuar3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.LblContactoFam = new System.Windows.Forms.Label();
             this.LblCorreoFam = new System.Windows.Forms.Label();
+            this.LblContactoFam = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.BtnContinuar3 = new System.Windows.Forms.Button();
             this.GroupBoxFamiliar.SuspendLayout();
             this.GroupBoxEDAD.SuspendLayout();
             this.GroupBoxEscolaridadFam.SuspendLayout();
@@ -89,14 +89,36 @@
             this.GroupBoxFamiliar.TabStop = false;
             this.GroupBoxFamiliar.Text = "DATOS FAMILIAR";
             // 
-            // LblNombresFamiliar
+            // comboBox2
             // 
-            this.LblNombresFamiliar.AutoSize = true;
-            this.LblNombresFamiliar.Location = new System.Drawing.Point(22, 45);
-            this.LblNombresFamiliar.Name = "LblNombresFamiliar";
-            this.LblNombresFamiliar.Size = new System.Drawing.Size(66, 16);
-            this.LblNombresFamiliar.TabIndex = 0;
-            this.LblNombresFamiliar.Text = "Nombres:";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(107, 90);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(188, 24);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(442, 42);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(253, 22);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(94, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(253, 22);
+            this.textBox1.TabIndex = 8;
+            // 
+            // LblParentesco
+            // 
+            this.LblParentesco.AutoSize = true;
+            this.LblParentesco.Location = new System.Drawing.Point(22, 93);
+            this.LblParentesco.Name = "LblParentesco";
+            this.LblParentesco.Size = new System.Drawing.Size(79, 16);
+            this.LblParentesco.TabIndex = 2;
+            this.LblParentesco.Text = "Parentesco:";
             // 
             // LblApellidosFamiliar
             // 
@@ -107,14 +129,14 @@
             this.LblApellidosFamiliar.TabIndex = 1;
             this.LblApellidosFamiliar.Text = "Apellidos:";
             // 
-            // LblParentesco
+            // LblNombresFamiliar
             // 
-            this.LblParentesco.AutoSize = true;
-            this.LblParentesco.Location = new System.Drawing.Point(22, 93);
-            this.LblParentesco.Name = "LblParentesco";
-            this.LblParentesco.Size = new System.Drawing.Size(79, 16);
-            this.LblParentesco.TabIndex = 2;
-            this.LblParentesco.Text = "Parentesco:";
+            this.LblNombresFamiliar.AutoSize = true;
+            this.LblNombresFamiliar.Location = new System.Drawing.Point(22, 45);
+            this.LblNombresFamiliar.Name = "LblNombresFamiliar";
+            this.LblNombresFamiliar.Size = new System.Drawing.Size(66, 16);
+            this.LblNombresFamiliar.TabIndex = 0;
+            this.LblNombresFamiliar.Text = "Nombres:";
             // 
             // LblEdadFamiliar
             // 
@@ -161,20 +183,6 @@
             this.LblRedCuidado.Text = "¿El paciente cuenta con red de cuidado? ";
             this.LblRedCuidado.Click += new System.EventHandler(this.label8_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(94, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 22);
-            this.textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(442, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 22);
-            this.textBox2.TabIndex = 9;
-            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(25, 40);
@@ -189,14 +197,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 11;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(107, 90);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(188, 24);
-            this.comboBox2.TabIndex = 12;
             // 
             // comboBox3
             // 
@@ -276,6 +276,38 @@
             this.GroupBoxRedCuidado.TabStop = false;
             this.GroupBoxRedCuidado.Text = "RED DE CUIDADO";
             // 
+            // LblCorreoFam
+            // 
+            this.LblCorreoFam.AutoSize = true;
+            this.LblCorreoFam.Location = new System.Drawing.Point(323, 69);
+            this.LblCorreoFam.Name = "LblCorreoFam";
+            this.LblCorreoFam.Size = new System.Drawing.Size(99, 13);
+            this.LblCorreoFam.TabIndex = 20;
+            this.LblCorreoFam.Text = "Correo electrónico: ";
+            // 
+            // LblContactoFam
+            // 
+            this.LblContactoFam.AutoSize = true;
+            this.LblContactoFam.Location = new System.Drawing.Point(311, 43);
+            this.LblContactoFam.Name = "LblContactoFam";
+            this.LblContactoFam.Size = new System.Drawing.Size(111, 13);
+            this.LblContactoFam.TabIndex = 19;
+            this.LblContactoFam.Text = "Número de Contacto: ";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(442, 69);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(253, 20);
+            this.textBox5.TabIndex = 18;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(442, 40);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(202, 20);
+            this.textBox4.TabIndex = 17;
+            // 
             // BtnContinuar3
             // 
             this.BtnContinuar3.BackColor = System.Drawing.Color.LimeGreen;
@@ -287,44 +319,12 @@
             this.BtnContinuar3.Text = "Continuar";
             this.BtnContinuar3.UseVisualStyleBackColor = false;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(442, 40);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
-            this.textBox4.TabIndex = 17;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(442, 69);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(253, 20);
-            this.textBox5.TabIndex = 18;
-            // 
-            // LblContactoFam
-            // 
-            this.LblContactoFam.AutoSize = true;
-            this.LblContactoFam.Location = new System.Drawing.Point(311, 43);
-            this.LblContactoFam.Name = "LblContactoFam";
-            this.LblContactoFam.Size = new System.Drawing.Size(111, 13);
-            this.LblContactoFam.TabIndex = 19;
-            this.LblContactoFam.Text = "Número de Contacto: ";
-            // 
-            // LblCorreoFam
-            // 
-            this.LblCorreoFam.AutoSize = true;
-            this.LblCorreoFam.Location = new System.Drawing.Point(323, 69);
-            this.LblCorreoFam.Name = "LblCorreoFam";
-            this.LblCorreoFam.Size = new System.Drawing.Size(99, 13);
-            this.LblCorreoFam.TabIndex = 20;
-            this.LblCorreoFam.Text = "Correo electrónico: ";
-            // 
             // EvaluacionFamiliar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(772, 621);
+            this.ClientSize = new System.Drawing.Size(919, 621);
             this.Controls.Add(this.BtnContinuar3);
             this.Controls.Add(this.GroupBoxRedCuidado);
             this.Controls.Add(this.GroupBoxEscolaridadFam);
