@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosGeneralesPaciente));
             this.label1 = new System.Windows.Forms.Label();
             this.GroupBoxInformacionPersonal = new System.Windows.Forms.GroupBox();
@@ -64,8 +65,12 @@
             this.RbtnNO = new System.Windows.Forms.RadioButton();
             this.LblProveedor = new System.Windows.Forms.Label();
             this.BtnContinuar1 = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.GroupBoxInformacionPersonal.SuspendLayout();
             this.GroupBoxDatosEconomicos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -472,6 +477,14 @@
             this.BtnContinuar1.Text = "Aceptar";
             this.BtnContinuar1.UseVisualStyleBackColor = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // DatosGeneralesPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,10 +498,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DatosGeneralesPaciente";
             this.Text = "F02 Datos Generales Paciente";
+            this.Load += new System.EventHandler(this.DatosGeneralesPaciente_Load);
             this.GroupBoxInformacionPersonal.ResumeLayout(false);
             this.GroupBoxInformacionPersonal.PerformLayout();
             this.GroupBoxDatosEconomicos.ResumeLayout(false);
             this.GroupBoxDatosEconomicos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,5 +547,7 @@
         private System.Windows.Forms.RadioButton RbtnSI;
         private System.Windows.Forms.RadioButton RbtnNO;
         private System.Windows.Forms.Button BtnContinuar1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }
