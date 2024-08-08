@@ -56,6 +56,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.BtnContinuar3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.GroupBoxFamiliar.SuspendLayout();
             this.GroupBoxEDAD.SuspendLayout();
             this.GroupBoxEscolaridadFam.SuspendLayout();
@@ -92,7 +93,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(107, 90);
+            this.comboBox2.Location = new System.Drawing.Point(106, 90);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(188, 24);
             this.comboBox2.TabIndex = 12;
@@ -185,7 +186,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(25, 40);
+            this.textBox3.Location = new System.Drawing.Point(26, 40);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(80, 20);
             this.textBox3.TabIndex = 10;
@@ -279,7 +280,7 @@
             // LblCorreoFam
             // 
             this.LblCorreoFam.AutoSize = true;
-            this.LblCorreoFam.Location = new System.Drawing.Point(323, 69);
+            this.LblCorreoFam.Location = new System.Drawing.Point(322, 69);
             this.LblCorreoFam.Name = "LblCorreoFam";
             this.LblCorreoFam.Size = new System.Drawing.Size(99, 13);
             this.LblCorreoFam.TabIndex = 20;
@@ -288,7 +289,7 @@
             // LblContactoFam
             // 
             this.LblContactoFam.AutoSize = true;
-            this.LblContactoFam.Location = new System.Drawing.Point(311, 43);
+            this.LblContactoFam.Location = new System.Drawing.Point(310, 43);
             this.LblContactoFam.Name = "LblContactoFam";
             this.LblContactoFam.Size = new System.Drawing.Size(111, 13);
             this.LblContactoFam.TabIndex = 19;
@@ -312,19 +313,31 @@
             // 
             this.BtnContinuar3.BackColor = System.Drawing.Color.LimeGreen;
             this.BtnContinuar3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnContinuar3.Location = new System.Drawing.Point(614, 522);
+            this.BtnContinuar3.Location = new System.Drawing.Point(790, 516);
             this.BtnContinuar3.Name = "BtnContinuar3";
-            this.BtnContinuar3.Size = new System.Drawing.Size(93, 51);
+            this.BtnContinuar3.Size = new System.Drawing.Size(93, 36);
             this.BtnContinuar3.TabIndex = 20;
             this.BtnContinuar3.Text = "Continuar";
             this.BtnContinuar3.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(596, 516);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 36);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Agregar familiar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // EvaluacionFamiliar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(919, 621);
+            this.ClientSize = new System.Drawing.Size(908, 598);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnContinuar3);
             this.Controls.Add(this.GroupBoxRedCuidado);
             this.Controls.Add(this.GroupBoxEscolaridadFam);
@@ -378,5 +391,6 @@
         private System.Windows.Forms.Label LblContactoFam;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button1;
     }
 }

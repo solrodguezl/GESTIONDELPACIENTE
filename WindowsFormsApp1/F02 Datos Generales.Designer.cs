@@ -52,10 +52,10 @@
             this.lblPrimerNombre = new System.Windows.Forms.Label();
             this.GroupBoxDatosEconomicos = new System.Windows.Forms.GroupBox();
             this.TxtDireccion = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ComBoxTipoVivienda = new System.Windows.Forms.ComboBox();
+            this.ComBoxReduccionAutonomia = new System.Windows.Forms.ComboBox();
+            this.ComBoxRecursosEconomicos = new System.Windows.Forms.ComboBox();
+            this.ComBoxSituacionLaboral = new System.Windows.Forms.ComboBox();
             this.LblReduccionAutonomia = new System.Windows.Forms.Label();
             this.LblDirecciónResidencia = new System.Windows.Forms.Label();
             this.LblTipoVivienda = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             this.RbtnSI = new System.Windows.Forms.RadioButton();
             this.RbtnNO = new System.Windows.Forms.RadioButton();
             this.LblProveedor = new System.Windows.Forms.Label();
-            this.BtnContinuar1 = new System.Windows.Forms.Button();
+            this.BtnAceptar1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.GroupBoxInformacionPersonal.SuspendLayout();
@@ -110,12 +110,13 @@
             this.GroupBoxInformacionPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GroupBoxInformacionPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBoxInformacionPersonal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.GroupBoxInformacionPersonal.Location = new System.Drawing.Point(25, 83);
+            this.GroupBoxInformacionPersonal.Location = new System.Drawing.Point(25, 70);
             this.GroupBoxInformacionPersonal.Name = "GroupBoxInformacionPersonal";
             this.GroupBoxInformacionPersonal.Size = new System.Drawing.Size(732, 210);
             this.GroupBoxInformacionPersonal.TabIndex = 1;
             this.GroupBoxInformacionPersonal.TabStop = false;
             this.GroupBoxInformacionPersonal.Text = "INFORMACIÓN PERSONAL";
+            this.GroupBoxInformacionPersonal.Enter += new System.EventHandler(this.GroupBoxInformacionPersonal_Enter);
             // 
             // RbtnPasaporte
             // 
@@ -300,10 +301,10 @@
             // GroupBoxDatosEconomicos
             // 
             this.GroupBoxDatosEconomicos.Controls.Add(this.TxtDireccion);
-            this.GroupBoxDatosEconomicos.Controls.Add(this.comboBox4);
-            this.GroupBoxDatosEconomicos.Controls.Add(this.comboBox3);
-            this.GroupBoxDatosEconomicos.Controls.Add(this.comboBox2);
-            this.GroupBoxDatosEconomicos.Controls.Add(this.comboBox1);
+            this.GroupBoxDatosEconomicos.Controls.Add(this.ComBoxTipoVivienda);
+            this.GroupBoxDatosEconomicos.Controls.Add(this.ComBoxReduccionAutonomia);
+            this.GroupBoxDatosEconomicos.Controls.Add(this.ComBoxRecursosEconomicos);
+            this.GroupBoxDatosEconomicos.Controls.Add(this.ComBoxSituacionLaboral);
             this.GroupBoxDatosEconomicos.Controls.Add(this.LblReduccionAutonomia);
             this.GroupBoxDatosEconomicos.Controls.Add(this.LblDirecciónResidencia);
             this.GroupBoxDatosEconomicos.Controls.Add(this.LblTipoVivienda);
@@ -314,7 +315,7 @@
             this.GroupBoxDatosEconomicos.Controls.Add(this.LblProveedor);
             this.GroupBoxDatosEconomicos.Location = new System.Drawing.Point(25, 314);
             this.GroupBoxDatosEconomicos.Name = "GroupBoxDatosEconomicos";
-            this.GroupBoxDatosEconomicos.Size = new System.Drawing.Size(732, 201);
+            this.GroupBoxDatosEconomicos.Size = new System.Drawing.Size(879, 201);
             this.GroupBoxDatosEconomicos.TabIndex = 2;
             this.GroupBoxDatosEconomicos.TabStop = false;
             this.GroupBoxDatosEconomicos.Text = "DATOS ECONÓMICOS";
@@ -323,41 +324,41 @@
             // 
             this.TxtDireccion.Location = new System.Drawing.Point(508, 114);
             this.TxtDireccion.Name = "TxtDireccion";
-            this.TxtDireccion.Size = new System.Drawing.Size(183, 20);
+            this.TxtDireccion.Size = new System.Drawing.Size(274, 20);
             this.TxtDireccion.TabIndex = 12;
             this.TxtDireccion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // comboBox4
+            // ComBoxTipoVivienda
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.ComBoxTipoVivienda.FormattingEnabled = true;
+            this.ComBoxTipoVivienda.Items.AddRange(new object[] {
             "Propia",
             "Familiar",
             "Arrendada",
             "Institucionalizado/a",
             "Otro"});
-            this.comboBox4.Location = new System.Drawing.Point(508, 77);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(183, 21);
-            this.comboBox4.TabIndex = 11;
+            this.ComBoxTipoVivienda.Location = new System.Drawing.Point(508, 77);
+            this.ComBoxTipoVivienda.Name = "ComBoxTipoVivienda";
+            this.ComBoxTipoVivienda.Size = new System.Drawing.Size(183, 21);
+            this.ComBoxTipoVivienda.TabIndex = 11;
             // 
-            // comboBox3
+            // ComBoxReduccionAutonomia
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.ComBoxReduccionAutonomia.FormattingEnabled = true;
+            this.ComBoxReduccionAutonomia.Items.AddRange(new object[] {
             "Ninguna",
             "Leve",
             "Grave",
             "Total"});
-            this.comboBox3.Location = new System.Drawing.Point(140, 180);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(220, 21);
-            this.comboBox3.TabIndex = 10;
+            this.ComBoxReduccionAutonomia.Location = new System.Drawing.Point(352, 154);
+            this.ComBoxReduccionAutonomia.Name = "ComBoxReduccionAutonomia";
+            this.ComBoxReduccionAutonomia.Size = new System.Drawing.Size(220, 21);
+            this.ComBoxReduccionAutonomia.TabIndex = 10;
             // 
-            // comboBox2
+            // ComBoxRecursosEconomicos
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.ComBoxRecursosEconomicos.FormattingEnabled = true;
+            this.ComBoxRecursosEconomicos.Items.AddRange(new object[] {
             "Inferior a un SMMLV",
             "1 SMMLV",
             "Superior a 1 SMMLV",
@@ -365,15 +366,15 @@
             "Aportes familiares",
             "Sin ingresos económicos",
             "Otro"});
-            this.comboBox2.Location = new System.Drawing.Point(140, 111);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 21);
-            this.comboBox2.TabIndex = 9;
+            this.ComBoxRecursosEconomicos.Location = new System.Drawing.Point(140, 111);
+            this.ComBoxRecursosEconomicos.Name = "ComBoxRecursosEconomicos";
+            this.ComBoxRecursosEconomicos.Size = new System.Drawing.Size(220, 21);
+            this.ComBoxRecursosEconomicos.TabIndex = 9;
             // 
-            // comboBox1
+            // ComBoxSituacionLaboral
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ComBoxSituacionLaboral.FormattingEnabled = true;
+            this.ComBoxSituacionLaboral.Items.AddRange(new object[] {
             "Desempleado",
             "Trabajador informal",
             "Pensionado",
@@ -383,10 +384,10 @@
             "Cuidador principal ",
             "Incapacidad laboral prolongada",
             "Otro"});
-            this.comboBox1.Location = new System.Drawing.Point(140, 77);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 21);
-            this.comboBox1.TabIndex = 8;
+            this.ComBoxSituacionLaboral.Location = new System.Drawing.Point(140, 77);
+            this.ComBoxSituacionLaboral.Name = "ComBoxSituacionLaboral";
+            this.ComBoxSituacionLaboral.Size = new System.Drawing.Size(220, 21);
+            this.ComBoxSituacionLaboral.TabIndex = 8;
             // 
             // LblReduccionAutonomia
             // 
@@ -466,16 +467,17 @@
             this.LblProveedor.Text = "¿El paciente es/era el proveedor principal del hogar?";
             this.LblProveedor.Click += new System.EventHandler(this.LblProveedor_Click);
             // 
-            // BtnContinuar1
+            // BtnAceptar1
             // 
-            this.BtnContinuar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnContinuar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnContinuar1.Location = new System.Drawing.Point(626, 533);
-            this.BtnContinuar1.Name = "BtnContinuar1";
-            this.BtnContinuar1.Size = new System.Drawing.Size(102, 44);
-            this.BtnContinuar1.TabIndex = 3;
-            this.BtnContinuar1.Text = "Aceptar";
-            this.BtnContinuar1.UseVisualStyleBackColor = false;
+            this.BtnAceptar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtnAceptar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar1.Location = new System.Drawing.Point(626, 533);
+            this.BtnAceptar1.Name = "BtnAceptar1";
+            this.BtnAceptar1.Size = new System.Drawing.Size(102, 44);
+            this.BtnAceptar1.TabIndex = 3;
+            this.BtnAceptar1.Text = "Aceptar";
+            this.BtnAceptar1.UseVisualStyleBackColor = false;
+            this.BtnAceptar1.Click += new System.EventHandler(this.BtnAceptar1_Click_1);
             // 
             // errorProvider1
             // 
@@ -491,7 +493,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(916, 589);
-            this.Controls.Add(this.BtnContinuar1);
+            this.Controls.Add(this.BtnAceptar1);
             this.Controls.Add(this.GroupBoxDatosEconomicos);
             this.Controls.Add(this.GroupBoxInformacionPersonal);
             this.Controls.Add(this.label1);
@@ -535,10 +537,10 @@
         private System.Windows.Forms.RadioButton RbtnTarjetaIdentidad;
         private System.Windows.Forms.RadioButton RbtnCedula;
         private System.Windows.Forms.TextBox TxtDireccion;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ComBoxTipoVivienda;
+        private System.Windows.Forms.ComboBox ComBoxReduccionAutonomia;
+        private System.Windows.Forms.ComboBox ComBoxRecursosEconomicos;
+        private System.Windows.Forms.ComboBox ComBoxSituacionLaboral;
         private System.Windows.Forms.Label LblReduccionAutonomia;
         private System.Windows.Forms.Label LblDirecciónResidencia;
         private System.Windows.Forms.Label LblTipoVivienda;
@@ -546,7 +548,7 @@
         private System.Windows.Forms.Label LblSituacionLaboral;
         private System.Windows.Forms.RadioButton RbtnSI;
         private System.Windows.Forms.RadioButton RbtnNO;
-        private System.Windows.Forms.Button BtnContinuar1;
+        private System.Windows.Forms.Button BtnAceptar1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
     }
