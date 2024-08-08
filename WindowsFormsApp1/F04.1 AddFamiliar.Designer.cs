@@ -28,77 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEvaluacionFamiliar));
+            this.LblEvaluacionFamiliar = new System.Windows.Forms.Label();
+            this.BtnContinuar3 = new System.Windows.Forms.Button();
             this.GroupBoxFamiliar = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ComBoxParentesco4 = new System.Windows.Forms.ComboBox();
+            this.TxtApellidos4 = new System.Windows.Forms.TextBox();
+            this.TxtNombres4 = new System.Windows.Forms.TextBox();
             this.LblParentesco = new System.Windows.Forms.Label();
             this.LblApellidosFamiliar = new System.Windows.Forms.Label();
             this.LblNombresFamiliar = new System.Windows.Forms.Label();
-            this.LblEvaluacionFamiliar = new System.Windows.Forms.Label();
+            this.erpEvaluacionF = new System.Windows.Forms.ErrorProvider(this.components);
             this.GroupBoxEDAD = new System.Windows.Forms.GroupBox();
             this.LblEdadFamiliar = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtEdad = new System.Windows.Forms.TextBox();
             this.LblEtapaFamiliar = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ComBoxEtapa4 = new System.Windows.Forms.ComboBox();
             this.GroupBoxEscolaridadFam = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.ComBoxNivelEscolaridad = new System.Windows.Forms.ComboBox();
             this.LblNiveldeEscolaridadFam = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.ComBoxOcupacion = new System.Windows.Forms.ComboBox();
             this.LblOcupacionFamiliar = new System.Windows.Forms.Label();
             this.GroupBoxRedCuidado = new System.Windows.Forms.GroupBox();
             this.LblCorreoFam = new System.Windows.Forms.Label();
             this.LblContactoFam = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtCorreo4 = new System.Windows.Forms.TextBox();
+            this.TxtCelular4 = new System.Windows.Forms.TextBox();
             this.LblRedCuidado = new System.Windows.Forms.Label();
             this.CkBoxSiCuidado = new System.Windows.Forms.CheckBox();
             this.CkBoxNoCuidado = new System.Windows.Forms.CheckBox();
-            this.BtnContinuar3 = new System.Windows.Forms.Button();
             this.GroupBoxFamiliar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEvaluacionF)).BeginInit();
             this.GroupBoxEDAD.SuspendLayout();
             this.GroupBoxEscolaridadFam.SuspendLayout();
             this.GroupBoxRedCuidado.SuspendLayout();
             this.SuspendLayout();
             // 
+            // LblEvaluacionFamiliar
+            // 
+            this.LblEvaluacionFamiliar.AutoSize = true;
+            this.LblEvaluacionFamiliar.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEvaluacionFamiliar.Location = new System.Drawing.Point(40, 32);
+            this.LblEvaluacionFamiliar.Name = "LblEvaluacionFamiliar";
+            this.LblEvaluacionFamiliar.Size = new System.Drawing.Size(198, 26);
+            this.LblEvaluacionFamiliar.TabIndex = 3;
+            this.LblEvaluacionFamiliar.Text = "Evaluación Familiar";
+            // 
+            // BtnContinuar3
+            // 
+            this.BtnContinuar3.BackColor = System.Drawing.Color.LimeGreen;
+            this.BtnContinuar3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnContinuar3.Location = new System.Drawing.Point(677, 493);
+            this.BtnContinuar3.Name = "BtnContinuar3";
+            this.BtnContinuar3.Size = new System.Drawing.Size(93, 36);
+            this.BtnContinuar3.TabIndex = 21;
+            this.BtnContinuar3.Text = "Continuar";
+            this.BtnContinuar3.UseVisualStyleBackColor = false;
+            this.BtnContinuar3.Click += new System.EventHandler(this.BtnContinuar3_Click);
+            // 
             // GroupBoxFamiliar
             // 
-            this.GroupBoxFamiliar.Controls.Add(this.comboBox2);
-            this.GroupBoxFamiliar.Controls.Add(this.textBox2);
-            this.GroupBoxFamiliar.Controls.Add(this.textBox1);
+            this.GroupBoxFamiliar.Controls.Add(this.ComBoxParentesco4);
+            this.GroupBoxFamiliar.Controls.Add(this.TxtApellidos4);
+            this.GroupBoxFamiliar.Controls.Add(this.TxtNombres4);
             this.GroupBoxFamiliar.Controls.Add(this.LblParentesco);
             this.GroupBoxFamiliar.Controls.Add(this.LblApellidosFamiliar);
             this.GroupBoxFamiliar.Controls.Add(this.LblNombresFamiliar);
             this.GroupBoxFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBoxFamiliar.Location = new System.Drawing.Point(45, 77);
+            this.GroupBoxFamiliar.Location = new System.Drawing.Point(45, 79);
             this.GroupBoxFamiliar.Name = "GroupBoxFamiliar";
-            this.GroupBoxFamiliar.Size = new System.Drawing.Size(710, 143);
-            this.GroupBoxFamiliar.TabIndex = 2;
+            this.GroupBoxFamiliar.Size = new System.Drawing.Size(710, 132);
+            this.GroupBoxFamiliar.TabIndex = 22;
             this.GroupBoxFamiliar.TabStop = false;
             this.GroupBoxFamiliar.Text = "DATOS FAMILIAR";
             // 
-            // comboBox2
+            // ComBoxParentesco4
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(106, 90);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(188, 24);
-            this.comboBox2.TabIndex = 12;
+            this.ComBoxParentesco4.FormattingEnabled = true;
+            this.ComBoxParentesco4.Location = new System.Drawing.Point(106, 90);
+            this.ComBoxParentesco4.Name = "ComBoxParentesco4";
+            this.ComBoxParentesco4.Size = new System.Drawing.Size(188, 24);
+            this.ComBoxParentesco4.TabIndex = 12;
             // 
-            // textBox2
+            // TxtApellidos4
             // 
-            this.textBox2.Location = new System.Drawing.Point(442, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 22);
-            this.textBox2.TabIndex = 9;
+            this.TxtApellidos4.Location = new System.Drawing.Point(442, 42);
+            this.TxtApellidos4.Name = "TxtApellidos4";
+            this.TxtApellidos4.Size = new System.Drawing.Size(253, 22);
+            this.TxtApellidos4.TabIndex = 9;
             // 
-            // textBox1
+            // TxtNombres4
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 22);
-            this.textBox1.TabIndex = 8;
+            this.TxtNombres4.Location = new System.Drawing.Point(94, 42);
+            this.TxtNombres4.Name = "TxtNombres4";
+            this.TxtNombres4.Size = new System.Drawing.Size(253, 22);
+            this.TxtNombres4.TabIndex = 8;
             // 
             // LblParentesco
             // 
@@ -127,25 +152,19 @@
             this.LblNombresFamiliar.TabIndex = 0;
             this.LblNombresFamiliar.Text = "Nombres:";
             // 
-            // LblEvaluacionFamiliar
+            // erpEvaluacionF
             // 
-            this.LblEvaluacionFamiliar.AutoSize = true;
-            this.LblEvaluacionFamiliar.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEvaluacionFamiliar.Location = new System.Drawing.Point(40, 32);
-            this.LblEvaluacionFamiliar.Name = "LblEvaluacionFamiliar";
-            this.LblEvaluacionFamiliar.Size = new System.Drawing.Size(198, 26);
-            this.LblEvaluacionFamiliar.TabIndex = 3;
-            this.LblEvaluacionFamiliar.Text = "Evaluación Familiar";
+            this.erpEvaluacionF.ContainerControl = this;
             // 
             // GroupBoxEDAD
             // 
             this.GroupBoxEDAD.Controls.Add(this.LblEdadFamiliar);
-            this.GroupBoxEDAD.Controls.Add(this.textBox3);
+            this.GroupBoxEDAD.Controls.Add(this.TxtEdad);
             this.GroupBoxEDAD.Controls.Add(this.LblEtapaFamiliar);
-            this.GroupBoxEDAD.Controls.Add(this.comboBox1);
-            this.GroupBoxEDAD.Location = new System.Drawing.Point(45, 231);
+            this.GroupBoxEDAD.Controls.Add(this.ComBoxEtapa4);
+            this.GroupBoxEDAD.Location = new System.Drawing.Point(45, 226);
             this.GroupBoxEDAD.Name = "GroupBoxEDAD";
-            this.GroupBoxEDAD.Size = new System.Drawing.Size(347, 91);
+            this.GroupBoxEDAD.Size = new System.Drawing.Size(332, 91);
             this.GroupBoxEDAD.TabIndex = 18;
             this.GroupBoxEDAD.TabStop = false;
             this.GroupBoxEDAD.Text = "EDAD";
@@ -158,12 +177,12 @@
             this.LblEdadFamiliar.Size = new System.Drawing.Size(0, 13);
             this.LblEdadFamiliar.TabIndex = 3;
             // 
-            // textBox3
+            // TxtEdad
             // 
-            this.textBox3.Location = new System.Drawing.Point(26, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(80, 20);
-            this.textBox3.TabIndex = 10;
+            this.TxtEdad.Location = new System.Drawing.Point(26, 40);
+            this.TxtEdad.Name = "TxtEdad";
+            this.TxtEdad.Size = new System.Drawing.Size(80, 20);
+            this.TxtEdad.TabIndex = 10;
             // 
             // LblEtapaFamiliar
             // 
@@ -174,19 +193,19 @@
             this.LblEtapaFamiliar.TabIndex = 4;
             this.LblEtapaFamiliar.Text = "Etapa:";
             // 
-            // comboBox1
+            // ComBoxEtapa4
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(174, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 11;
+            this.ComBoxEtapa4.FormattingEnabled = true;
+            this.ComBoxEtapa4.Location = new System.Drawing.Point(174, 37);
+            this.ComBoxEtapa4.Name = "ComBoxEtapa4";
+            this.ComBoxEtapa4.Size = new System.Drawing.Size(121, 21);
+            this.ComBoxEtapa4.TabIndex = 11;
             // 
             // GroupBoxEscolaridadFam
             // 
-            this.GroupBoxEscolaridadFam.Controls.Add(this.comboBox3);
+            this.GroupBoxEscolaridadFam.Controls.Add(this.ComBoxNivelEscolaridad);
             this.GroupBoxEscolaridadFam.Controls.Add(this.LblNiveldeEscolaridadFam);
-            this.GroupBoxEscolaridadFam.Controls.Add(this.comboBox4);
+            this.GroupBoxEscolaridadFam.Controls.Add(this.ComBoxOcupacion);
             this.GroupBoxEscolaridadFam.Controls.Add(this.LblOcupacionFamiliar);
             this.GroupBoxEscolaridadFam.Location = new System.Drawing.Point(417, 226);
             this.GroupBoxEscolaridadFam.Name = "GroupBoxEscolaridadFam";
@@ -195,13 +214,13 @@
             this.GroupBoxEscolaridadFam.TabStop = false;
             this.GroupBoxEscolaridadFam.Text = "ESCOLARIDAD";
             // 
-            // comboBox3
+            // ComBoxNivelEscolaridad
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(140, 37);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 13;
+            this.ComBoxNivelEscolaridad.FormattingEnabled = true;
+            this.ComBoxNivelEscolaridad.Location = new System.Drawing.Point(140, 37);
+            this.ComBoxNivelEscolaridad.Name = "ComBoxNivelEscolaridad";
+            this.ComBoxNivelEscolaridad.Size = new System.Drawing.Size(121, 21);
+            this.ComBoxNivelEscolaridad.TabIndex = 13;
             // 
             // LblNiveldeEscolaridadFam
             // 
@@ -212,13 +231,13 @@
             this.LblNiveldeEscolaridadFam.TabIndex = 5;
             this.LblNiveldeEscolaridadFam.Text = "Nivel: ";
             // 
-            // comboBox4
+            // ComBoxOcupacion
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(140, 83);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 14;
+            this.ComBoxOcupacion.FormattingEnabled = true;
+            this.ComBoxOcupacion.Location = new System.Drawing.Point(140, 83);
+            this.ComBoxOcupacion.Name = "ComBoxOcupacion";
+            this.ComBoxOcupacion.Size = new System.Drawing.Size(121, 21);
+            this.ComBoxOcupacion.TabIndex = 14;
             // 
             // LblOcupacionFamiliar
             // 
@@ -233,15 +252,15 @@
             // 
             this.GroupBoxRedCuidado.Controls.Add(this.LblCorreoFam);
             this.GroupBoxRedCuidado.Controls.Add(this.LblContactoFam);
-            this.GroupBoxRedCuidado.Controls.Add(this.textBox5);
-            this.GroupBoxRedCuidado.Controls.Add(this.textBox4);
+            this.GroupBoxRedCuidado.Controls.Add(this.TxtCorreo4);
+            this.GroupBoxRedCuidado.Controls.Add(this.TxtCelular4);
             this.GroupBoxRedCuidado.Controls.Add(this.LblRedCuidado);
             this.GroupBoxRedCuidado.Controls.Add(this.CkBoxSiCuidado);
             this.GroupBoxRedCuidado.Controls.Add(this.CkBoxNoCuidado);
-            this.GroupBoxRedCuidado.Location = new System.Drawing.Point(40, 348);
+            this.GroupBoxRedCuidado.Location = new System.Drawing.Point(45, 348);
             this.GroupBoxRedCuidado.Name = "GroupBoxRedCuidado";
-            this.GroupBoxRedCuidado.Size = new System.Drawing.Size(730, 124);
-            this.GroupBoxRedCuidado.TabIndex = 20;
+            this.GroupBoxRedCuidado.Size = new System.Drawing.Size(710, 124);
+            this.GroupBoxRedCuidado.TabIndex = 23;
             this.GroupBoxRedCuidado.TabStop = false;
             this.GroupBoxRedCuidado.Text = "RED DE CUIDADO";
             // 
@@ -263,19 +282,19 @@
             this.LblContactoFam.TabIndex = 19;
             this.LblContactoFam.Text = "Número de Contacto: ";
             // 
-            // textBox5
+            // TxtCorreo4
             // 
-            this.textBox5.Location = new System.Drawing.Point(442, 69);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(253, 20);
-            this.textBox5.TabIndex = 18;
+            this.TxtCorreo4.Location = new System.Drawing.Point(442, 69);
+            this.TxtCorreo4.Name = "TxtCorreo4";
+            this.TxtCorreo4.Size = new System.Drawing.Size(253, 20);
+            this.TxtCorreo4.TabIndex = 18;
             // 
-            // textBox4
+            // TxtCelular4
             // 
-            this.textBox4.Location = new System.Drawing.Point(442, 40);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
-            this.textBox4.TabIndex = 17;
+            this.TxtCelular4.Location = new System.Drawing.Point(442, 40);
+            this.TxtCelular4.Name = "TxtCelular4";
+            this.TxtCelular4.Size = new System.Drawing.Size(202, 20);
+            this.TxtCelular4.TabIndex = 17;
             // 
             // LblRedCuidado
             // 
@@ -306,35 +325,26 @@
             this.CkBoxNoCuidado.Text = "NO.";
             this.CkBoxNoCuidado.UseVisualStyleBackColor = true;
             // 
-            // BtnContinuar3
-            // 
-            this.BtnContinuar3.BackColor = System.Drawing.Color.LimeGreen;
-            this.BtnContinuar3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnContinuar3.Location = new System.Drawing.Point(677, 493);
-            this.BtnContinuar3.Name = "BtnContinuar3";
-            this.BtnContinuar3.Size = new System.Drawing.Size(93, 36);
-            this.BtnContinuar3.TabIndex = 21;
-            this.BtnContinuar3.Text = "Continuar";
-            this.BtnContinuar3.UseVisualStyleBackColor = false;
-            // 
             // AddEvaluacionFamiliar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 539);
-            this.Controls.Add(this.BtnContinuar3);
             this.Controls.Add(this.GroupBoxRedCuidado);
             this.Controls.Add(this.GroupBoxEscolaridadFam);
             this.Controls.Add(this.GroupBoxEDAD);
-            this.Controls.Add(this.LblEvaluacionFamiliar);
             this.Controls.Add(this.GroupBoxFamiliar);
+            this.Controls.Add(this.BtnContinuar3);
+            this.Controls.Add(this.LblEvaluacionFamiliar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AddEvaluacionFamiliar";
             this.Text = "Nuevo Familiar";
+            this.Load += new System.EventHandler(this.AddEvaluacionFamiliar_Load);
             this.GroupBoxFamiliar.ResumeLayout(false);
             this.GroupBoxFamiliar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEvaluacionF)).EndInit();
             this.GroupBoxEDAD.ResumeLayout(false);
             this.GroupBoxEDAD.PerformLayout();
             this.GroupBoxEscolaridadFam.ResumeLayout(false);
@@ -347,33 +357,33 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.Label LblEvaluacionFamiliar;
+        private System.Windows.Forms.Button BtnContinuar3;
         private System.Windows.Forms.GroupBox GroupBoxFamiliar;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox ComBoxParentesco4;
+        private System.Windows.Forms.TextBox TxtApellidos4;
+        private System.Windows.Forms.TextBox TxtNombres4;
         private System.Windows.Forms.Label LblParentesco;
         private System.Windows.Forms.Label LblApellidosFamiliar;
         private System.Windows.Forms.Label LblNombresFamiliar;
-        private System.Windows.Forms.Label LblEvaluacionFamiliar;
+        private System.Windows.Forms.ErrorProvider erpEvaluacionF;
         private System.Windows.Forms.GroupBox GroupBoxEDAD;
         private System.Windows.Forms.Label LblEdadFamiliar;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtEdad;
         private System.Windows.Forms.Label LblEtapaFamiliar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ComBoxEtapa4;
         private System.Windows.Forms.GroupBox GroupBoxEscolaridadFam;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox ComBoxNivelEscolaridad;
         private System.Windows.Forms.Label LblNiveldeEscolaridadFam;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox ComBoxOcupacion;
         private System.Windows.Forms.Label LblOcupacionFamiliar;
         private System.Windows.Forms.GroupBox GroupBoxRedCuidado;
         private System.Windows.Forms.Label LblCorreoFam;
         private System.Windows.Forms.Label LblContactoFam;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtCorreo4;
+        private System.Windows.Forms.TextBox TxtCelular4;
         private System.Windows.Forms.Label LblRedCuidado;
         private System.Windows.Forms.CheckBox CkBoxSiCuidado;
         private System.Windows.Forms.CheckBox CkBoxNoCuidado;
-        private System.Windows.Forms.Button BtnContinuar3;
     }
 }
