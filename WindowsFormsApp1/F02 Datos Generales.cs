@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -134,7 +135,7 @@ namespace WindowsFormsApp1
             }
 
             bool radioButtonChecked = true;
-            // validar botones para alfabeta
+            // validar botones 
 
             if (!(RbtnCedula.Checked || RbtnPasaporte.Checked || RbtnTarjetaIdentidad.Checked))
             {
@@ -150,50 +151,63 @@ namespace WindowsFormsApp1
 
             //Validar listas desplegables. 
 
-                bool comboBoxSelected = true;
-                errorProvider1.Clear();
-              
-                if (ComBoxDepartamento.SelectedIndex == -1)
-                {
-                    errorProvider1.SetError(ComBoxDepartamento, "Seleccione un elemento.");
-                    comboBoxSelected = false;
-                }
+            bool comboBoxSelected = true;
+            errorProvider1.Clear();
 
-                if (ComBoxGenero.SelectedIndex == -1)
-                {
-                    errorProvider1.SetError(ComBoxGenero, "Seleccione un elemento.");
-                    comboBoxSelected = false;
-                }
-
-                if (ComBoxTipoVivienda.SelectedIndex == -1)
-                {
-                    errorProvider1.SetError(ComBoxTipoVivienda, "Seleccione un elemento.");
-                    comboBoxSelected = false;
-                }
-
-                if (ComBoxRecursosEconomicos.SelectedIndex == -1)
-                {
-                    errorProvider1.SetError(ComBoxRecursosEconomicos, "Seleccione un elemento.");
-                    comboBoxSelected = false;
-                }
-
-                if (ComBoxReduccionAutonomia.SelectedIndex == -1)
-                {
-                    errorProvider1.SetError(ComBoxReduccionAutonomia, "Seleccione un elemento.");
-                    comboBoxSelected = false;
-                }
-
-                if (ComBoxSituacionLaboral.SelectedIndex == -1)
-                {
-                    errorProvider1.SetError(ComBoxSituacionLaboral, "Seleccione un elemento.");
-                    comboBoxSelected = false;
+            if (ComBoxDepartamento.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(ComBoxDepartamento, "Seleccione un elemento.");
+                comboBoxSelected = false;
             }
 
+            if (ComBoxGenero.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(ComBoxGenero, "Seleccione un elemento.");
+                comboBoxSelected = false;
+            }
 
-            EnfermedadesReportadas ven3 = new EnfermedadesReportadas();
-            ven3.Show();
-            this.Hide();
-            MessageBox.Show("El formulario fue diligenciado de forma exitosa.");
+            if (ComBoxTipoVivienda.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(ComBoxTipoVivienda, "Seleccione un elemento.");
+                comboBoxSelected = false;
+            }
+
+            if (ComBoxRecursosEconomicos.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(ComBoxRecursosEconomicos, "Seleccione un elemento.");
+                comboBoxSelected = false;
+            }
+
+            if (ComBoxReduccionAutonomia.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(ComBoxReduccionAutonomia, "Seleccione un elemento.");
+                comboBoxSelected = false;
+            }
+
+            if (ComBoxSituacionLaboral.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(ComBoxSituacionLaboral, "Seleccione un elemento.");
+                comboBoxSelected = false;
+            }
+
+            {
+             // Mostrar mensaje de advertencia por errores antes de continuar
+
+                if (!radioButtonChecked || !comboBoxSelected || !textBoxcheked)
+                {
+                    MessageBox.Show("Corrija los errores antes de continuar, y verifique que todos los campos esten diligenciados");
+                    return;
+                }
+                else
+                {
+                    EnfermedadesReportadas ven3 = new EnfermedadesReportadas();
+                    ven3.Show();
+                    this.Hide();
+                    MessageBox.Show("El formulario fue diligenciado de forma exitosa.");
+                }
+
+            }
+            
 
         }
     }

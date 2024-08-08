@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnfermedadesReportadas));
             this.LblEnfermedadesReportadas = new System.Windows.Forms.Label();
             this.GroupBoxEnfermedades = new System.Windows.Forms.GroupBox();
@@ -38,7 +39,9 @@
             this.CkBoxHipertension = new System.Windows.Forms.CheckBox();
             this.LblEnfermedades = new System.Windows.Forms.Label();
             this.BtnContinuar2 = new System.Windows.Forms.Button();
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.GroupBoxEnfermedades.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // LblEnfermedadesReportadas
@@ -142,6 +145,11 @@
             this.BtnContinuar2.TabIndex = 2;
             this.BtnContinuar2.Text = "Continuar";
             this.BtnContinuar2.UseVisualStyleBackColor = false;
+            this.BtnContinuar2.Click += new System.EventHandler(this.BtnContinuar2_Click);
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
             // 
             // EnfermedadesReportadas
             // 
@@ -157,6 +165,7 @@
             this.Text = "F03 Enfermedades Reportadas por el Paciente";
             this.GroupBoxEnfermedades.ResumeLayout(false);
             this.GroupBoxEnfermedades.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +182,6 @@
         private System.Windows.Forms.CheckBox CkBoxDiabetes;
         private System.Windows.Forms.CheckBox CkBoxHipertension;
         private System.Windows.Forms.Button BtnContinuar2;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

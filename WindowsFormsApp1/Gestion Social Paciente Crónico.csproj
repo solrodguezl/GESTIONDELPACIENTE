@@ -76,6 +76,12 @@
     <Compile Include="F05 Cuidador del Paciente.Designer.cs">
       <DependentUpon>F05 Cuidador del Paciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="F04.1 AddFamiliar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F04.1 AddFamiliar.Designer.cs">
+      <DependentUpon>F04.1 AddFamiliar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="F01 Ingreso.resx">
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F05 Cuidador del Paciente.resx">
       <DependentUpon>F05 Cuidador del Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F04.1 AddFamiliar.resx">
+      <DependentUpon>F04.1 AddFamiliar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
