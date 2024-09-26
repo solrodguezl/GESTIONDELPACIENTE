@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CuidadorPaciente));
             this.LblCuidadorPaciente = new System.Windows.Forms.Label();
             this.LblNombresCuidador = new System.Windows.Forms.Label();
@@ -46,34 +47,36 @@
             this.CkBoxDiabetesCuidador = new System.Windows.Forms.CheckBox();
             this.GroupBoxEnfermedadesCuidador = new System.Windows.Forms.GroupBox();
             this.GroupBoxAfiliacionCuidador = new System.Windows.Forms.GroupBox();
-            this.LblAfiliacionCuidador = new System.Windows.Forms.Label();
-            this.CkBoxSiAfiliado = new System.Windows.Forms.CheckBox();
             this.CkBoxNoAfiliado = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CkBoxSiAfiliado = new System.Windows.Forms.CheckBox();
+            this.LblAfiliacionCuidador = new System.Windows.Forms.Label();
+            this.TxtNombres5 = new System.Windows.Forms.TextBox();
+            this.TxtApellidos5 = new System.Windows.Forms.TextBox();
+            this.TxtNumeroDocumento = new System.Windows.Forms.TextBox();
+            this.TxtEdad5 = new System.Windows.Forms.TextBox();
+            this.TxtCelular5 = new System.Windows.Forms.TextBox();
+            this.TxtCorreo5 = new System.Windows.Forms.TextBox();
+            this.ComBoxTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.ComBoxParentesco5 = new System.Windows.Forms.ComboBox();
             this.GroupBoxControlesCuidador = new System.Windows.Forms.GroupBox();
-            this.LblControlesCuidador = new System.Windows.Forms.Label();
-            this.CkBoxTiempo = new System.Windows.Forms.CheckBox();
-            this.CkBoxTemor = new System.Windows.Forms.CheckBox();
-            this.CkBoxNoquiere = new System.Windows.Forms.CheckBox();
-            this.CkBoxRelevo = new System.Windows.Forms.CheckBox();
-            this.CkBoxAgotamiento = new System.Windows.Forms.CheckBox();
-            this.CkBoxAfiliacionCuidador = new System.Windows.Forms.CheckBox();
-            this.CkBoxOtroCuidador = new System.Windows.Forms.CheckBox();
-            this.LblParticipaProgramasCuidador = new System.Windows.Forms.Label();
+            this.ComBoxProgramasDeCuidado = new System.Windows.Forms.ComboBox();
+            this.ComBoxTest = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LblParticipaProgramasCuidador = new System.Windows.Forms.Label();
+            this.CkBoxOtroCuidador = new System.Windows.Forms.CheckBox();
+            this.CkBoxAfiliacionCuidador = new System.Windows.Forms.CheckBox();
+            this.CkBoxAgotamiento = new System.Windows.Forms.CheckBox();
+            this.CkBoxRelevo = new System.Windows.Forms.CheckBox();
+            this.CkBoxNoquiere = new System.Windows.Forms.CheckBox();
+            this.CkBoxTemor = new System.Windows.Forms.CheckBox();
+            this.CkBoxTiempo = new System.Windows.Forms.CheckBox();
+            this.LblControlesCuidador = new System.Windows.Forms.Label();
+            this.BtnGuardar = new System.Windows.Forms.Button();
+            this.erpCuidador = new System.Windows.Forms.ErrorProvider(this.components);
             this.GroupBoxEnfermedadesCuidador.SuspendLayout();
             this.GroupBoxAfiliacionCuidador.SuspendLayout();
             this.GroupBoxControlesCuidador.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCuidador)).BeginInit();
             this.SuspendLayout();
             // 
             // LblCuidadorPaciente
@@ -246,15 +249,15 @@
             this.GroupBoxAfiliacionCuidador.TabStop = false;
             this.GroupBoxAfiliacionCuidador.Text = "AFILIACIÓN";
             // 
-            // LblAfiliacionCuidador
+            // CkBoxNoAfiliado
             // 
-            this.LblAfiliacionCuidador.AutoSize = true;
-            this.LblAfiliacionCuidador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAfiliacionCuidador.Location = new System.Drawing.Point(24, 36);
-            this.LblAfiliacionCuidador.Name = "LblAfiliacionCuidador";
-            this.LblAfiliacionCuidador.Size = new System.Drawing.Size(179, 16);
-            this.LblAfiliacionCuidador.TabIndex = 0;
-            this.LblAfiliacionCuidador.Text = "¿Está afiliado a Nueva EPS?";
+            this.CkBoxNoAfiliado.AutoSize = true;
+            this.CkBoxNoAfiliado.Location = new System.Drawing.Point(53, 113);
+            this.CkBoxNoAfiliado.Name = "CkBoxNoAfiliado";
+            this.CkBoxNoAfiliado.Size = new System.Drawing.Size(43, 17);
+            this.CkBoxNoAfiliado.TabIndex = 2;
+            this.CkBoxNoAfiliado.Text = "No.";
+            this.CkBoxNoAfiliado.UseVisualStyleBackColor = true;
             // 
             // CkBoxSiAfiliado
             // 
@@ -266,74 +269,74 @@
             this.CkBoxSiAfiliado.Text = "Sí.";
             this.CkBoxSiAfiliado.UseVisualStyleBackColor = true;
             // 
-            // CkBoxNoAfiliado
+            // LblAfiliacionCuidador
             // 
-            this.CkBoxNoAfiliado.AutoSize = true;
-            this.CkBoxNoAfiliado.Location = new System.Drawing.Point(53, 113);
-            this.CkBoxNoAfiliado.Name = "CkBoxNoAfiliado";
-            this.CkBoxNoAfiliado.Size = new System.Drawing.Size(43, 17);
-            this.CkBoxNoAfiliado.TabIndex = 2;
-            this.CkBoxNoAfiliado.Text = "No.";
-            this.CkBoxNoAfiliado.UseVisualStyleBackColor = true;
+            this.LblAfiliacionCuidador.AutoSize = true;
+            this.LblAfiliacionCuidador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAfiliacionCuidador.Location = new System.Drawing.Point(24, 36);
+            this.LblAfiliacionCuidador.Name = "LblAfiliacionCuidador";
+            this.LblAfiliacionCuidador.Size = new System.Drawing.Size(179, 16);
+            this.LblAfiliacionCuidador.TabIndex = 0;
+            this.LblAfiliacionCuidador.Text = "¿Está afiliado a Nueva EPS?";
             // 
-            // textBox1
+            // TxtNombres5
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 18;
+            this.TxtNombres5.Location = new System.Drawing.Point(101, 51);
+            this.TxtNombres5.Name = "TxtNombres5";
+            this.TxtNombres5.Size = new System.Drawing.Size(220, 20);
+            this.TxtNombres5.TabIndex = 18;
             // 
-            // textBox2
+            // TxtApellidos5
             // 
-            this.textBox2.Location = new System.Drawing.Point(397, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(257, 20);
-            this.textBox2.TabIndex = 19;
+            this.TxtApellidos5.Location = new System.Drawing.Point(397, 51);
+            this.TxtApellidos5.Name = "TxtApellidos5";
+            this.TxtApellidos5.Size = new System.Drawing.Size(257, 20);
+            this.TxtApellidos5.TabIndex = 19;
             // 
-            // textBox3
+            // TxtNumeroDocumento
             // 
-            this.textBox3.Location = new System.Drawing.Point(397, 103);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 20);
-            this.textBox3.TabIndex = 20;
+            this.TxtNumeroDocumento.Location = new System.Drawing.Point(397, 103);
+            this.TxtNumeroDocumento.Name = "TxtNumeroDocumento";
+            this.TxtNumeroDocumento.Size = new System.Drawing.Size(204, 20);
+            this.TxtNumeroDocumento.TabIndex = 20;
             // 
-            // textBox4
+            // TxtEdad5
             // 
-            this.textBox4.Location = new System.Drawing.Point(677, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(55, 20);
-            this.textBox4.TabIndex = 21;
+            this.TxtEdad5.Location = new System.Drawing.Point(677, 106);
+            this.TxtEdad5.Name = "TxtEdad5";
+            this.TxtEdad5.Size = new System.Drawing.Size(55, 20);
+            this.TxtEdad5.TabIndex = 21;
             // 
-            // textBox5
+            // TxtCelular5
             // 
-            this.textBox5.Location = new System.Drawing.Point(97, 157);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(143, 20);
-            this.textBox5.TabIndex = 22;
+            this.TxtCelular5.Location = new System.Drawing.Point(97, 157);
+            this.TxtCelular5.Name = "TxtCelular5";
+            this.TxtCelular5.Size = new System.Drawing.Size(143, 20);
+            this.TxtCelular5.TabIndex = 22;
             // 
-            // textBox6
+            // TxtCorreo5
             // 
-            this.textBox6.Location = new System.Drawing.Point(394, 152);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(260, 20);
-            this.textBox6.TabIndex = 23;
+            this.TxtCorreo5.Location = new System.Drawing.Point(394, 152);
+            this.TxtCorreo5.Name = "TxtCorreo5";
+            this.TxtCorreo5.Size = new System.Drawing.Size(260, 20);
+            this.TxtCorreo5.TabIndex = 23;
             // 
-            // comboBox1
+            // ComBoxTipoDocumento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ComBoxTipoDocumento.FormattingEnabled = true;
+            this.ComBoxTipoDocumento.Items.AddRange(new object[] {
             "CC",
             "TI",
             "PASAPORTE"});
-            this.comboBox1.Location = new System.Drawing.Point(151, 102);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 21);
-            this.comboBox1.TabIndex = 24;
+            this.ComBoxTipoDocumento.Location = new System.Drawing.Point(151, 102);
+            this.ComBoxTipoDocumento.Name = "ComBoxTipoDocumento";
+            this.ComBoxTipoDocumento.Size = new System.Drawing.Size(89, 21);
+            this.ComBoxTipoDocumento.TabIndex = 24;
             // 
-            // comboBox2
+            // ComBoxParentesco5
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.ComBoxParentesco5.FormattingEnabled = true;
+            this.ComBoxParentesco5.Items.AddRange(new object[] {
             "Hijo/a",
             "Hermano/a",
             "Padre/madre",
@@ -342,15 +345,15 @@
             "Tío/a",
             "Ninguno",
             "Otro"});
-            this.comboBox2.Location = new System.Drawing.Point(116, 206);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(187, 21);
-            this.comboBox2.TabIndex = 25;
+            this.ComBoxParentesco5.Location = new System.Drawing.Point(116, 206);
+            this.ComBoxParentesco5.Name = "ComBoxParentesco5";
+            this.ComBoxParentesco5.Size = new System.Drawing.Size(187, 21);
+            this.ComBoxParentesco5.TabIndex = 25;
             // 
             // GroupBoxControlesCuidador
             // 
-            this.GroupBoxControlesCuidador.Controls.Add(this.comboBox4);
-            this.GroupBoxControlesCuidador.Controls.Add(this.comboBox3);
+            this.GroupBoxControlesCuidador.Controls.Add(this.ComBoxProgramasDeCuidado);
+            this.GroupBoxControlesCuidador.Controls.Add(this.ComBoxTest);
             this.GroupBoxControlesCuidador.Controls.Add(this.label2);
             this.GroupBoxControlesCuidador.Controls.Add(this.LblParticipaProgramasCuidador);
             this.GroupBoxControlesCuidador.Controls.Add(this.CkBoxOtroCuidador);
@@ -368,75 +371,47 @@
             this.GroupBoxControlesCuidador.TabStop = false;
             this.GroupBoxControlesCuidador.Text = "SEGUIMIENTO CUIDADOR";
             // 
-            // LblControlesCuidador
+            // ComBoxProgramasDeCuidado
             // 
-            this.LblControlesCuidador.AutoSize = true;
-            this.LblControlesCuidador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblControlesCuidador.Location = new System.Drawing.Point(16, 39);
-            this.LblControlesCuidador.Name = "LblControlesCuidador";
-            this.LblControlesCuidador.Size = new System.Drawing.Size(276, 16);
-            this.LblControlesCuidador.TabIndex = 0;
-            this.LblControlesCuidador.Text = "¿El cuidador asiste a sus controles médicos?";
+            this.ComBoxProgramasDeCuidado.FormattingEnabled = true;
+            this.ComBoxProgramasDeCuidado.Items.AddRange(new object[] {
+            "SI",
+            "NO",
+            "NO APLICA"});
+            this.ComBoxProgramasDeCuidado.Location = new System.Drawing.Point(429, 69);
+            this.ComBoxProgramasDeCuidado.Name = "ComBoxProgramasDeCuidado";
+            this.ComBoxProgramasDeCuidado.Size = new System.Drawing.Size(121, 21);
+            this.ComBoxProgramasDeCuidado.TabIndex = 11;
             // 
-            // CkBoxTiempo
+            // ComBoxTest
             // 
-            this.CkBoxTiempo.AutoSize = true;
-            this.CkBoxTiempo.Location = new System.Drawing.Point(37, 69);
-            this.CkBoxTiempo.Name = "CkBoxTiempo";
-            this.CkBoxTiempo.Size = new System.Drawing.Size(206, 17);
-            this.CkBoxTiempo.TabIndex = 1;
-            this.CkBoxTiempo.Text = "Falta de tiempo por cuidar al paciente.";
-            this.CkBoxTiempo.UseVisualStyleBackColor = true;
+            this.ComBoxTest.FormattingEnabled = true;
+            this.ComBoxTest.Items.AddRange(new object[] {
+            "Ausencia de sobrecarga",
+            "Sobrecarga ligera",
+            "Sobrecarga intensa"});
+            this.ComBoxTest.Location = new System.Drawing.Point(429, 161);
+            this.ComBoxTest.Name = "ComBoxTest";
+            this.ComBoxTest.Size = new System.Drawing.Size(121, 21);
+            this.ComBoxTest.TabIndex = 10;
             // 
-            // CkBoxTemor
+            // label2
             // 
-            this.CkBoxTemor.AutoSize = true;
-            this.CkBoxTemor.Location = new System.Drawing.Point(37, 92);
-            this.CkBoxTemor.Name = "CkBoxTemor";
-            this.CkBoxTemor.Size = new System.Drawing.Size(252, 17);
-            this.CkBoxTemor.TabIndex = 2;
-            this.CkBoxTemor.Text = "Temor de no poder seguir cuidando al paciente.";
-            this.CkBoxTemor.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(426, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Test de Zarit: ";
             // 
-            // CkBoxNoquiere
+            // LblParticipaProgramasCuidador
             // 
-            this.CkBoxNoquiere.AutoSize = true;
-            this.CkBoxNoquiere.Location = new System.Drawing.Point(37, 115);
-            this.CkBoxNoquiere.Name = "CkBoxNoquiere";
-            this.CkBoxNoquiere.Size = new System.Drawing.Size(75, 17);
-            this.CkBoxNoquiere.TabIndex = 3;
-            this.CkBoxNoquiere.Text = "No quiere.";
-            this.CkBoxNoquiere.UseVisualStyleBackColor = true;
-            // 
-            // CkBoxRelevo
-            // 
-            this.CkBoxRelevo.AutoSize = true;
-            this.CkBoxRelevo.Location = new System.Drawing.Point(37, 138);
-            this.CkBoxRelevo.Name = "CkBoxRelevo";
-            this.CkBoxRelevo.Size = new System.Drawing.Size(157, 17);
-            this.CkBoxRelevo.TabIndex = 4;
-            this.CkBoxRelevo.Text = "No tiene relevo en el cargo.";
-            this.CkBoxRelevo.UseVisualStyleBackColor = true;
-            // 
-            // CkBoxAgotamiento
-            // 
-            this.CkBoxAgotamiento.AutoSize = true;
-            this.CkBoxAgotamiento.Location = new System.Drawing.Point(37, 161);
-            this.CkBoxAgotamiento.Name = "CkBoxAgotamiento";
-            this.CkBoxAgotamiento.Size = new System.Drawing.Size(92, 17);
-            this.CkBoxAgotamiento.TabIndex = 5;
-            this.CkBoxAgotamiento.Text = "Está agotado.";
-            this.CkBoxAgotamiento.UseVisualStyleBackColor = true;
-            // 
-            // CkBoxAfiliacionCuidador
-            // 
-            this.CkBoxAfiliacionCuidador.AutoSize = true;
-            this.CkBoxAfiliacionCuidador.Location = new System.Drawing.Point(37, 184);
-            this.CkBoxAfiliacionCuidador.Name = "CkBoxAfiliacionCuidador";
-            this.CkBoxAfiliacionCuidador.Size = new System.Drawing.Size(113, 17);
-            this.CkBoxAfiliacionCuidador.TabIndex = 6;
-            this.CkBoxAfiliacionCuidador.Text = "No tiene afiliación.";
-            this.CkBoxAfiliacionCuidador.UseVisualStyleBackColor = true;
+            this.LblParticipaProgramasCuidador.AutoSize = true;
+            this.LblParticipaProgramasCuidador.Location = new System.Drawing.Point(426, 42);
+            this.LblParticipaProgramasCuidador.Name = "LblParticipaProgramasCuidador";
+            this.LblParticipaProgramasCuidador.Size = new System.Drawing.Size(321, 13);
+            this.LblParticipaProgramasCuidador.TabIndex = 8;
+            this.LblParticipaProgramasCuidador.Text = "¿Participa de programas de cuidado al cuidador en su IPS básica?";
             // 
             // CkBoxOtroCuidador
             // 
@@ -448,58 +423,91 @@
             this.CkBoxOtroCuidador.Text = "Otro.";
             this.CkBoxOtroCuidador.UseVisualStyleBackColor = true;
             // 
-            // LblParticipaProgramasCuidador
+            // CkBoxAfiliacionCuidador
             // 
-            this.LblParticipaProgramasCuidador.AutoSize = true;
-            this.LblParticipaProgramasCuidador.Location = new System.Drawing.Point(426, 42);
-            this.LblParticipaProgramasCuidador.Name = "LblParticipaProgramasCuidador";
-            this.LblParticipaProgramasCuidador.Size = new System.Drawing.Size(321, 13);
-            this.LblParticipaProgramasCuidador.TabIndex = 8;
-            this.LblParticipaProgramasCuidador.Text = "¿Participa de programas de cuidado al cuidador en su IPS básica?";
+            this.CkBoxAfiliacionCuidador.AutoSize = true;
+            this.CkBoxAfiliacionCuidador.Location = new System.Drawing.Point(37, 184);
+            this.CkBoxAfiliacionCuidador.Name = "CkBoxAfiliacionCuidador";
+            this.CkBoxAfiliacionCuidador.Size = new System.Drawing.Size(113, 17);
+            this.CkBoxAfiliacionCuidador.TabIndex = 6;
+            this.CkBoxAfiliacionCuidador.Text = "No tiene afiliación.";
+            this.CkBoxAfiliacionCuidador.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // CkBoxAgotamiento
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(426, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Test de Zarit: ";
+            this.CkBoxAgotamiento.AutoSize = true;
+            this.CkBoxAgotamiento.Location = new System.Drawing.Point(37, 161);
+            this.CkBoxAgotamiento.Name = "CkBoxAgotamiento";
+            this.CkBoxAgotamiento.Size = new System.Drawing.Size(92, 17);
+            this.CkBoxAgotamiento.TabIndex = 5;
+            this.CkBoxAgotamiento.Text = "Está agotado.";
+            this.CkBoxAgotamiento.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // CkBoxRelevo
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Ausencia de sobrecarga",
-            "Sobrecarga ligera",
-            "Sobrecarga intensa"});
-            this.comboBox3.Location = new System.Drawing.Point(429, 161);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 10;
+            this.CkBoxRelevo.AutoSize = true;
+            this.CkBoxRelevo.Location = new System.Drawing.Point(37, 138);
+            this.CkBoxRelevo.Name = "CkBoxRelevo";
+            this.CkBoxRelevo.Size = new System.Drawing.Size(157, 17);
+            this.CkBoxRelevo.TabIndex = 4;
+            this.CkBoxRelevo.Text = "No tiene relevo en el cargo.";
+            this.CkBoxRelevo.UseVisualStyleBackColor = true;
             // 
-            // comboBox4
+            // CkBoxNoquiere
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "SI",
-            "NO",
-            "NO APLICA"});
-            this.comboBox4.Location = new System.Drawing.Point(429, 69);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 11;
+            this.CkBoxNoquiere.AutoSize = true;
+            this.CkBoxNoquiere.Location = new System.Drawing.Point(37, 115);
+            this.CkBoxNoquiere.Name = "CkBoxNoquiere";
+            this.CkBoxNoquiere.Size = new System.Drawing.Size(75, 17);
+            this.CkBoxNoquiere.TabIndex = 3;
+            this.CkBoxNoquiere.Text = "No quiere.";
+            this.CkBoxNoquiere.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // CkBoxTemor
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(725, 669);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 52);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.CkBoxTemor.AutoSize = true;
+            this.CkBoxTemor.Location = new System.Drawing.Point(37, 92);
+            this.CkBoxTemor.Name = "CkBoxTemor";
+            this.CkBoxTemor.Size = new System.Drawing.Size(252, 17);
+            this.CkBoxTemor.TabIndex = 2;
+            this.CkBoxTemor.Text = "Temor de no poder seguir cuidando al paciente.";
+            this.CkBoxTemor.UseVisualStyleBackColor = true;
+            // 
+            // CkBoxTiempo
+            // 
+            this.CkBoxTiempo.AutoSize = true;
+            this.CkBoxTiempo.Location = new System.Drawing.Point(37, 69);
+            this.CkBoxTiempo.Name = "CkBoxTiempo";
+            this.CkBoxTiempo.Size = new System.Drawing.Size(206, 17);
+            this.CkBoxTiempo.TabIndex = 1;
+            this.CkBoxTiempo.Text = "Falta de tiempo por cuidar al paciente.";
+            this.CkBoxTiempo.UseVisualStyleBackColor = true;
+            // 
+            // LblControlesCuidador
+            // 
+            this.LblControlesCuidador.AutoSize = true;
+            this.LblControlesCuidador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblControlesCuidador.Location = new System.Drawing.Point(16, 39);
+            this.LblControlesCuidador.Name = "LblControlesCuidador";
+            this.LblControlesCuidador.Size = new System.Drawing.Size(276, 16);
+            this.LblControlesCuidador.TabIndex = 0;
+            this.LblControlesCuidador.Text = "¿El cuidador asiste a sus controles médicos?";
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.BackColor = System.Drawing.Color.LimeGreen;
+            this.BtnGuardar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.Location = new System.Drawing.Point(725, 669);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(113, 52);
+            this.BtnGuardar.TabIndex = 27;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // erpCuidador
+            // 
+            this.erpCuidador.ContainerControl = this;
             // 
             // CuidadorPaciente
             // 
@@ -507,16 +515,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1003, 749);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.GroupBoxControlesCuidador);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ComBoxParentesco5);
+            this.Controls.Add(this.ComBoxTipoDocumento);
+            this.Controls.Add(this.TxtCorreo5);
+            this.Controls.Add(this.TxtCelular5);
+            this.Controls.Add(this.TxtEdad5);
+            this.Controls.Add(this.TxtNumeroDocumento);
+            this.Controls.Add(this.TxtApellidos5);
+            this.Controls.Add(this.TxtNombres5);
             this.Controls.Add(this.GroupBoxAfiliacionCuidador);
             this.Controls.Add(this.GroupBoxEnfermedadesCuidador);
             this.Controls.Add(this.LblParentescoCuidador);
@@ -538,6 +546,7 @@
             this.GroupBoxAfiliacionCuidador.PerformLayout();
             this.GroupBoxControlesCuidador.ResumeLayout(false);
             this.GroupBoxControlesCuidador.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCuidador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -565,20 +574,20 @@
         private System.Windows.Forms.CheckBox CkBoxNoAfiliado;
         private System.Windows.Forms.CheckBox CkBoxSiAfiliado;
         private System.Windows.Forms.Label LblAfiliacionCuidador;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox TxtNombres5;
+        private System.Windows.Forms.TextBox TxtApellidos5;
+        private System.Windows.Forms.TextBox TxtNumeroDocumento;
+        private System.Windows.Forms.TextBox TxtEdad5;
+        private System.Windows.Forms.TextBox TxtCelular5;
+        private System.Windows.Forms.TextBox TxtCorreo5;
+        private System.Windows.Forms.ComboBox ComBoxTipoDocumento;
+        private System.Windows.Forms.ComboBox ComBoxParentesco5;
         private System.Windows.Forms.GroupBox GroupBoxControlesCuidador;
         private System.Windows.Forms.CheckBox CkBoxTemor;
         private System.Windows.Forms.CheckBox CkBoxTiempo;
         private System.Windows.Forms.Label LblControlesCuidador;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox ComBoxProgramasDeCuidado;
+        private System.Windows.Forms.ComboBox ComBoxTest;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblParticipaProgramasCuidador;
         private System.Windows.Forms.CheckBox CkBoxOtroCuidador;
@@ -586,6 +595,7 @@
         private System.Windows.Forms.CheckBox CkBoxAgotamiento;
         private System.Windows.Forms.CheckBox CkBoxRelevo;
         private System.Windows.Forms.CheckBox CkBoxNoquiere;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnGuardar;
+        private System.Windows.Forms.ErrorProvider erpCuidador;
     }
 }

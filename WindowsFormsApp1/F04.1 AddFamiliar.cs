@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class EvaluacionFamiliar : Form
+    public partial class AddEvaluacionFamiliar : Form
     {
-        public EvaluacionFamiliar()
+        public AddEvaluacionFamiliar()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblEvaluacionFamiliar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
         }
 
         private static bool ValidarSoloLetras(TextBox textBox, ErrorProvider erpEvaluacionF)
@@ -75,6 +60,11 @@ namespace WindowsFormsApp1
         }
 
         private void BtnContinuar3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddEvaluacionFamiliar_Load(object sender, EventArgs e)
         {
             bool textBoxcheked = true;
 
@@ -140,7 +130,7 @@ namespace WindowsFormsApp1
 
             // validar botones 
             bool radioButtonChecked = true;
-            if (!(CkBoxNoCuidado.Checked || CkBoxSiCuidado.Checked ))
+            if (!(CkBoxNoCuidado.Checked || CkBoxSiCuidado.Checked))
             {
                 erpEvaluacionF.SetError(CkBoxSiCuidado, "Debe seleccionar por lo menos una opción.");
                 radioButtonChecked = false;
@@ -154,7 +144,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Corrija los errores antes de continuar, y verifique que todos los campos esten diligenciados");
                 return;
             }
-
             else
             {
                 CuidadorPaciente ven5 = new CuidadorPaciente();
@@ -162,15 +151,6 @@ namespace WindowsFormsApp1
                 this.Hide();
                 MessageBox.Show("El formulario fue diligenciado de forma exitosa.");
             }
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AddEvaluacionFamiliar ven41 = new AddEvaluacionFamiliar();
-            ven41.Show();
-            this.Hide();
-            MessageBox.Show("El formulario fue diligenciado de forma exitosa.");
         }
     }
 }
